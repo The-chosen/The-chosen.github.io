@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html zh-cn="">
+
+
+
+
+
+
+
+<head>
+	
+	
+	<link rel="stylesheet" href="/css/allinone.min.css"> 
+
+	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>RosJava环境搭建 | JimmyLee 官网</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="generator" content="hexo">
+	<meta name="author" content="">
+	<meta name="description" content="">
+
+	
+	<meta name="keywords" content="">
+	
+
+	
+	<link rel="shortcut icon" href="https://i.loli.net/2018/11/12/5be8f0e84bea9.png">
+	
+
+	
+	<meta name="theme-color" content="#3c484e">
+	<meta name="msapplication-TileColor" content="#3c484e">
+	
+
+	
+
+	
+
+	<meta property="og:site_name" content="JimmyLee 官网">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="RosJava环境搭建 | JimmyLee 官网">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="http://yoursite.com/2018/11/12/ROSJava环境搭建/">
+
+	
+	<meta property="article:published_time" content="2018-11-12T16:11:00+08:00"> 
+	<meta property="article:author" content="">
+	<meta property="article:published_first" content="JimmyLee 官网, /2018/11/12/ROSJava环境搭建/">
+	
+</head>
+<body class="post-template">
+	<div class="site-wrapper">
+		
+
+
+
+
+<header class="site-header outer" style="z-index: 999">
+    <div class="inner">
+        
+<nav class="site-nav"> 
+    <div class="site-nav-left">
+        <ul class="nav">
+            <li>
+                
+                
+                <a class="site-nav-logo" href="/" title="JimmyLee 官网">
+                    <img src="https://i.loli.net/2018/11/12/5be8f24738792.png" alt="JimmyLee 官网">
+                </a>
+                
+                
+            </li>
+            
+            
+            <li>
+                <a href="/about" title="ABOUT">ABOUT</a>
+            </li>
+            
+            <li>
+                <a href="/archives" title="ARCHIVES">ARCHIVES</a>
+            </li>
+            
+            
+        </ul> 
+    </div>
+    
+    <div class="search-button">
+        <a href="#search" class="subscribe-button" style="margin: 0 10px;">Search ...</a>
+    </div>
+     
+    <div class="site-nav-right">
+        
+        <a href="#search" class="subscribe-button" style="margin: 0 10px;">Search ...</a>
+         
+        
+<div class="social-links">
+    
+    <a class="social-link" title="weibo" href="https://weibo.com" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1141 1024" xmlns="http://www.w3.org/2000/svg"><path d="M916.48 518.144q27.648 21.504 38.912 51.712t9.216 62.976-14.336 65.536-31.744 59.392q-34.816 48.128-78.848 81.92t-91.136 56.32-94.72 35.328-89.6 18.944-75.264 7.68-51.712 1.536-49.152-2.56-68.096-10.24-78.336-21.504-79.872-36.352-74.24-55.296-59.904-78.848q-16.384-29.696-22.016-63.488t-5.632-86.016q0-22.528 7.68-51.2t27.136-63.488 53.248-75.776 86.016-90.112q51.2-48.128 105.984-85.504t117.248-57.856q28.672-10.24 63.488-11.264t57.344 11.264q10.24 11.264 19.456 23.04t12.288 29.184q3.072 14.336 0.512 27.648t-5.632 26.624-5.12 25.6 2.048 22.528q17.408 2.048 33.792-1.536t31.744-9.216 31.232-11.776 33.28-9.216q27.648-5.12 54.784-4.608t49.152 7.68 36.352 22.016 17.408 38.4q2.048 14.336-2.048 26.624t-8.704 23.04-7.168 22.016 1.536 23.552q3.072 7.168 14.848 13.312t27.136 12.288 32.256 13.312 29.184 16.384zM658.432 836.608q26.624-16.384 53.76-45.056t44.032-64 18.944-75.776-20.48-81.408q-19.456-33.792-47.616-57.344t-62.976-37.376-74.24-19.968-80.384-6.144q-78.848 0-139.776 16.384t-105.472 43.008-72.192 60.416-38.912 68.608q-11.264 33.792-6.656 67.072t20.992 62.976 42.496 53.248 57.856 37.888q58.368 25.6 119.296 32.256t116.224 0.512 100.864-21.504 74.24-33.792zM524.288 513.024q20.48 8.192 38.912 18.432t32.768 27.648q10.24 12.288 17.92 30.72t10.752 39.424 1.536 42.496-9.728 38.912q-8.192 18.432-19.968 37.376t-28.672 35.328-40.448 29.184-57.344 18.944q-61.44 11.264-117.76-11.264t-88.064-74.752q-12.288-39.936-13.312-70.656t16.384-66.56q13.312-27.648 40.448-51.712t62.464-38.912 75.264-17.408 78.848 12.8zM361.472 764.928q37.888 3.072 57.856-18.432t21.504-48.128-15.36-47.616-52.736-16.896q-27.648 3.072-43.008 23.552t-17.408 43.52 9.728 42.496 39.424 21.504zM780.288 6.144q74.752 0 139.776 19.968t113.664 57.856 76.288 92.16 27.648 122.88q0 33.792-16.384 50.688t-35.328 17.408-35.328-14.336-16.384-45.568q0-40.96-22.528-77.824t-59.392-64.512-84.48-43.52-96.768-15.872q-31.744 0-47.104-15.36t-14.336-34.304 18.944-34.304 51.712-15.36zM780.288 169.984q95.232 0 144.384 48.64t49.152 146.944q0 30.72-10.24 43.52t-22.528 11.264-22.528-14.848-10.24-35.84q0-60.416-34.816-96.256t-93.184-35.84q-19.456 0-28.672-10.752t-9.216-23.04 9.728-23.04 28.16-10.752z"/></svg>
+    </a>
+    
+    
+    <a class="social-link" title="github" href="https://github.com/JimmyLee05" target="_blank" rel="noopener">
+        <svg viewbox="0 0 1049 1024" xmlns="http://www.w3.org/2000/svg"><path d="M524.979332 0C234.676191 0 0 234.676191 0 524.979332c0 232.068678 150.366597 428.501342 358.967656 498.035028 26.075132 5.215026 35.636014-11.299224 35.636014-25.205961 0-12.168395-0.869171-53.888607-0.869171-97.347161-146.020741 31.290159-176.441729-62.580318-176.441729-62.580318-23.467619-60.841976-58.234462-76.487055-58.234463-76.487055-47.804409-32.15933 3.476684-32.15933 3.476685-32.15933 53.019436 3.476684 80.83291 53.888607 80.83291 53.888607 46.935238 79.963739 122.553122 57.365291 152.97411 43.458554 4.345855-33.897672 18.252593-57.365291 33.028501-70.402857-116.468925-12.168395-239.022047-57.365291-239.022047-259.012982 0-57.365291 20.860106-104.300529 53.888607-140.805715-5.215026-13.037566-23.467619-66.926173 5.215027-139.067372 0 0 44.327725-13.906737 144.282399 53.888607 41.720212-11.299224 86.917108-17.383422 131.244833-17.383422s89.524621 6.084198 131.244833 17.383422C756.178839 203.386032 800.506564 217.29277 800.506564 217.29277c28.682646 72.1412 10.430053 126.029806 5.215026 139.067372 33.897672 36.505185 53.888607 83.440424 53.888607 140.805715 0 201.64769-122.553122 245.975415-239.891218 259.012982 19.121764 16.514251 35.636014 47.804409 35.636015 97.347161 0 70.402857-0.869171 126.898978-0.869172 144.282399 0 13.906737 9.560882 30.420988 35.636015 25.205961 208.601059-69.533686 358.967656-265.96635 358.967655-498.035028C1049.958663 234.676191 814.413301 0 524.979332 0z"/></svg>
+    </a>
+    
+    
+    <a class="social-link" title="facebook" href="https://facebook" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+
+    </a>
+    
+    
+    <a class="social-link" title="twitter" href="https://twitter.com" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+
+    </a>
+    
+    
+    
+    
+</div>
+    </div>
+</nav>
+    </div>
+</header>
+
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2018-11-12T08:42:25.000Z" itemprop="datePublished">
+                    2018-11-12
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                <a href="/categories/开发/">开发</a>&nbsp;&nbsp;
+                
+                
+            </section>
+            <h1 class="post-full-title">RosJava环境搭建</h1>
+        </header>
+        <article class="post-full ">
+            
+            <figure class="post-full-image" style="background-image: url(https://i.loli.net/2017/11/26/5a19c059c6b49.jpg)">
+            </figure>
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <p>ROS (Robot Operating System) 是在2010年发布的开源机器人操作系统。</p>
+<p>RosJava 是用 Java实现的 ROS，它提供了一个客户端库用于快速调用 ROS的 Topics, Services 和Parameters，我们可以用它在 Android 上进行 RosJava的开发。</p>
+<p>资料分享: Ros官网: <a href="http://wiki.ros.org/" target="_blank" rel="noopener">http://wiki.ros.org/</a><br>        RosJava官方文档: <a href="http://wiki.ros.org/rosjava" target="_blank" rel="noopener">http://wiki.ros.org/rosjava</a></p>
+<h2 id="1-ROS环境搭建"><a href="#1-ROS环境搭建" class="headerlink" title="1.ROS环境搭建"></a>1.ROS环境搭建</h2><p>ROS Kinetic支持 Xenial (16.04)和 Wily(15.10)，其它 Linux 系统需要安装其它的 ROS版本。<br>下面开始在 Ubuntu 16.0.4上搭建 ROS Kinetic开发环境。</p>
+<p>参考资料: <a href="http://wiki.ros.org/kinetic" target="_blank" rel="noopener">http://wiki.ros.org/kinetic</a><br>          <a href="http://wiki.ros.org/kinetic/Installation/Ubuntu" target="_blank" rel="noopener">http://wiki.ros.org/kinetic/Installation/Ubuntu</a></p>
+<h3 id="使用下面命令："><a href="#使用下面命令：" class="headerlink" title="使用下面命令："></a>使用下面命令：</h3><pre><code>~$ sudo sh -c &apos;echo &quot;deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&apos;
+</code></pre><p><img src="/images/ROSJava环境搭建/001.png" alt="" class="post-img b-lazy" href="/images/ROSJava环境搭建/001.png" data-src="/images/ROSJava环境搭建/001.png"></p>
+<p>2.2 设置keys</p>
+<pre><code>~$ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
+</code></pre><p><img src="/images/ROSJava环境搭建/002.png" alt="" class="post-img b-lazy" href="/images/ROSJava环境搭建/002.png" data-src="/images/ROSJava环境搭建/002.png"></p>
+<p>2.3 安装</p>
+<pre><code>~$ sudo apt-get update
+
+~$ sudo apt-get install ros-kinetic-desktop-full
+</code></pre><p>安装功能包：</p>
+<pre><code>~$ sudo apt-get install ros-kinetic-slam-gmapping
+</code></pre><p>查找在kinetic中可以使用的功能包：</p>
+<pre><code>~$ apt-cache search ros-kinetic
+</code></pre><p>2.4 初始化</p>
+<pre><code>~$ sudo rosdep init
+
+~$ rosdep update
+</code></pre><p>2.5 环境配置</p>
+<pre><code>~$ echo &quot;source /opt/ros/kinetic/setup.bash&quot; &gt;&gt; ~/.bashrc
+
+~$ source ~/.bashrc
+</code></pre><p>注意当安装多个ROS发行版，使用kinetic需要用到下面命令：</p>
+<pre><code>~$ source /opt/ros/kinetic/setup.bash
+</code></pre><p>2.6 安装rosinstall</p>
+<pre><code>~$ sudo apt-get install python-rosinstall
+</code></pre><p>2.7 测试roscore</p>
+<pre><code>~$ roscore
+</code></pre><p><img src="/images/ROSJava环境搭建/003.png" alt="" class="post-img b-lazy" href="/images/ROSJava环境搭建/003.png" data-src="/images/ROSJava环境搭建/003.png"></p>
+<p>安装ROS成功后,在Beginner Tutorials中有一个简单的示例程序.</p>
+<p><img src="/images/ROSJava环境搭建/004.png" alt="" class="post-img b-lazy" href="/images/ROSJava环境搭建/004.png" data-src="/images/ROSJava环境搭建/004.png"></p>
+<p>在Terminal中运行以下命令： </p>
+<pre><code>$ roscore
+</code></pre><p>新开一个terminal，运行以下命令，打开小乌龟窗口： </p>
+<pre><code>$ rosrun turtlesim turtlesim_node
+</code></pre><p>新开一个terminal，运行以下命令，打开乌龟控制窗口，可使用方向键控制乌龟运动： </p>
+<pre><code>$ rosrun turtlesim turtle_teleop_key
+</code></pre><p>选中控制窗口，按方向键，可看到小乌龟窗口中乌龟在运动。<br>新开一个terminal，运行以下命令，可以看到ROS的图形化界面，展示结点的关系： </p>
+<pre><code>$ rosrun rqt_graph rqt_graph
+</code></pre><p>至此，测试完成，ROS成功</p>
+<p>2.RosJava环境搭建 </p>
+<p>在 Ros环境搭建完成后搭建 RosJava 环境。</p>
+<p>参考资料: <a href="http://wiki.ros.org/rosjava/Tutorials/kinetic/Source%20Installation" target="_blank" rel="noopener">http://wiki.ros.org/rosjava/Tutorials/kinetic/Source%20Installation</a><br>          <a href="https://blog.csdn.net/F_season/article/details/9166133" target="_blank" rel="noopener">https://blog.csdn.net/F_season/article/details/9166133</a></p>
+<p>使用下面命令：<br>1.安装依赖<br>$ sudo apt-get install ros-kinetic-catkin ros-kinetic-rospack python-wstool openjdk-8-jdk</p>
+<p>2.核心功能<br>$ mkdir -p ~/rosjava/src<br>$ wstool init -j4 ~/rosjava/src <a href="https://raw.githubusercontent.com/rosjava/rosjava/kinetic/rosjava.rosinstall" target="_blank" rel="noopener">https://raw.githubusercontent.com/rosjava/rosjava/kinetic/rosjava.rosinstall</a><br>$  source /opt/ros/kinetic/setup.bash<br>$  cd ~/rosjava<br>$  rosdep update<br>$  rosdep install –from-paths src -i -y<br>$  catkin_make</p>
+<p>3.配置 .bashrc文件<br>在.bashrc 文件里设置 Ros的环境变量，不设置的话 ROS和 RosJava Android<br>间的通讯不能连通。</p>
+<p>Linux系统里打开终端，输入命令:<br>$ gedit ~/.bashrc</p>
+<p><img src="/images/ROSJava环境搭建/005.png" alt="" class="post-img b-lazy" href="/images/ROSJava环境搭建/005.png" data-src="/images/ROSJava环境搭建/005.png"></p>
+<p>在最后一行添加三个 export语句<br>export ROS_HOSTNAME=192.168.199.141<br>export ROS_IP=192.168.199.141<br>export ROS_MASTER_URL=<a href="http://192.168.199.141:11311" target="_blank" rel="noopener">http://192.168.199.141:11311</a></p>
+<p>把IP地址改成自己本机连接网络的IP地址，之后手机和安装Linux的ROS系统需要连接在同一个网络</p>
+<p>3.在 Android中使用ROS<br>在Mac上搭建好 Android开发环境，安装好Android Studio，配置好翻墙网络。<br>通过给Android App添加上ROS的依赖库，可以在没有ROS环境的Mac上开发ROS客户端。</p>
+<p>参考资料:<br><a href="http://community.bwbot.org/topic/627/%E5%9C%A8android%E4%B8%AD%E4%BD%BF%E7%94%A8ros" target="_blank" rel="noopener">http://community.bwbot.org/topic/627/%E5%9C%A8android%E4%B8%AD%E4%BD%BF%E7%94%A8ros</a></p>
+<p>1.创建一个 Android App项目</p>
+<p><img src="/images/ROSJava环境搭建/006.png" alt="" class="post-img b-lazy" href="/images/ROSJava环境搭建/006.png" data-src="/images/ROSJava环境搭建/006.png"></p>
+<p><img src="/images/ROSJava环境搭建/007.png" alt="" class="post-img b-lazy" href="/images/ROSJava环境搭建/007.png" data-src="/images/ROSJava环境搭建/007.png"></p>
+<p>然后点击Finish</p>
+<p>等待项目同步完成。一般这里出问题就是网络没有配置好，需要开翻墙软件。</p>
+<p>2.修改 build.gradle文件</p>
+<p>项目同步完成之后，在项目左侧的文件列表内会有两个build.gradle文件。其中一个是Project的，另一个是Module的。</p>
+<p><img src="/images/ROSJava环境搭建/008.png" alt="" class="post-img b-lazy" href="/images/ROSJava环境搭建/008.png" data-src="/images/ROSJava环境搭建/008.png"></p>
+<p>首先修改Project的build.gradle文件</p>
+<p>把文件中的</p>
+<p>buildscript {<br>    repositories {<br>        jcenter()<br>    }<br>    dependencies {<br>        classpath ‘com.android.tools.build:gradle:2.2.3’</p>
+<pre><code>    // NOTE: Do not place your application dependencies here; they belong
+    // in the individual module build.gradle files
+}
+</code></pre><p>}<br>修改为</p>
+<p>buildscript {<br>  apply from: “<a href="https://github.com/rosjava/android_core/raw/kinetic/buildscript.gradle&quot;" target="_blank" rel="noopener">https://github.com/rosjava/android_core/raw/kinetic/buildscript.gradle&quot;</a><br>}<br>然后在文件中添加</p>
+<p>subprojects {<br>    apply plugin: ‘ros-android’<br>Do not place your applica<br>    afterEvaluate { project -&gt;<br>        android {<br>            // Exclude a few files that are duplicated across our dependencies and<br>            // prevent packaging Android applications.<br>            packagingOptions {<br>                exclude “META-INF/LICENSE.txt”<br>                exclude “META-INF/NOTICE.txt”<br>            }<br>        }<br>    }<br>}<br>然后修改Module的build.gradle，在dependencies 中添加ros依赖</p>
+<p>…<br>dependencies {<br>    …<br>    // You now now add any rosjava dependencies, like so:<br>    compile ‘org.ros.android_core:android_10:[0.3,0.4)’<br>}<br>…<br>同时把dependencies 中的 全部implementation修改为compile。注意修改时的大小写。</p>
+<p>把文件中的compileSdkVersion版本设置为25<br>targetSdkVersion也设置为25<br>把 com.android.support:appcompat-v7:27.1.1也修改成25的版本</p>
+<p>最后修改完成的文件如下面所示</p>
+<p>apply plugin: ‘com.android.application’</p>
+<p>android {<br>    compileSdkVersion 25<br>    defaultConfig {<br>        applicationId “org.bwbot.rostest”<br>        minSdkVersion 15<br>        targetSdkVersion 25<br>        versionCode 1<br>        versionName “1.0”<br>        testInstrumentationRunner “android.support.test.runner.AndroidJUnitRunner”<br>    }<br>    buildTypes {<br>        release {<br>            minifyEnabled false<br>            proguardFiles getDefaultProguardFile(‘proguard-android.txt’), ‘proguard-rules.pro’<br>        }<br>    }<br>}</p>
+<p>dependencies {<br>    compile fileTree(dir: ‘libs’, include: [‘*.jar’])<br>    compile ‘com.android.support:appcompat-v7:25.4.0’<br>    compile ‘com.android.support.constraint:constraint-layout:1.1.3’<br>    testCompile ‘junit:junit:4.12’<br>    androidTestCompile ‘com.android.support.test:runner:1.0.2’<br>    androidTestCompile ‘com.android.support.test.espresso:espresso-core:3.0.2’<br>    compile ‘org.ros.android_core:android_10:[0.3,0.4)’<br>}</p>
+<p>3.修改AndroidManifest.xml文件<br>此时如果编译项目会出现下面的错误</p>
+<p>Manifest merger failed : Attribute application@icon value=(@mipmap/ic_launcher) from AndroidManifest.xml:7:9-43<br>    is also present at [org.ros.android_core:android_10:0.3.3] AndroidManifest.xml:19:9-36 value=(@mipmap/icon).<br>    Suggestion: add ‘tools:replace=”android:icon”‘ to <application> element at AndroidManifest.xml:5:5-19:19 to override.<br>此时需要修改AndroidManifest.xml文件在application项目中做如下修改</application></p>
+<p>&lt;application xmlns:tools=”<a href="http://schemas.android.com/tools&quot;" target="_blank" rel="noopener">http://schemas.android.com/tools&quot;</a><br>        tools:replace=”android:icon”<br>        …<br>为了能够正常使用还需要给app添加网络权限。在AndroidManifest.xml文件中添加</p>
+<p><uses-permission android:name="android.permission.INTERNET"><br>最后的AndroidManifest.xml文件如下</uses-permission></p>
+<p>&lt;?xml version=”1.0” encoding=”utf-8”?&gt;</p>
+<p><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.bwbot.rostest"><br>    <uses-permission android:name="android.permission.INTERNET"><br>    <application xmlns:tools="http://schemas.android.com/tools" tools:replace="android:icon" android:allowbackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundicon="@mipmap/ic_launcher_round" android:supportsrtl="true" android:theme="@style/AppTheme"><br>        <activity android:name=".MainActivity"><br>            <intent-filter><br>                <action android:name="android.intent.action.MAIN"></action></intent-filter></activity></application></uses-permission></manifest></p>
+<pre><code>            &lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;
+        &lt;/intent-filter&gt;
+    &lt;/activity&gt;
+&lt;/application&gt;
+</code></pre><p><br>此时项目已经可以成功编译了。</p>
+<ol start="2">
+<li>写一个简单的消息发布程序<br>MainActivity.java内容如下</li>
+</ol>
+<p>package org.bwbot.rostest;</p>
+<p>import android.support.v7.app.AppCompatActivity;<br>import android.os.Bundle;</p>
+<p>import org.ros.android.RosActivity;<br>import org.ros.concurrent.CancellableLoop;<br>import org.ros.namespace.GraphName;<br>import org.ros.node.ConnectedNode;<br>import org.ros.node.Node;<br>import org.ros.node.NodeConfiguration;<br>import org.ros.node.NodeMain;<br>import org.ros.node.NodeMainExecutor;<br>import org.ros.node.topic.Publisher;</p>
+<p>import java.net.URI;</p>
+<p>import std_msgs.String;</p>
+<p>public class MainActivity extends RosActivity {</p>
+<pre><code>protected MainActivity() {
+    super(&quot;ros_test&quot;, &quot;ros_test&quot;, URI.create(&quot;http://192.168.0.23:11311&quot;)); // 这里是ROS_MASTER_URI
+}
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+}
+
+@Override
+protected void init(NodeMainExecutor nodeMainExecutor) {
+    NodeConfiguration nodeConfiguration = NodeConfiguration.newPublic(getRosHostname());
+    nodeConfiguration.setMasterUri(getMasterUri());
+    nodeMainExecutor.execute(new NodeMain() {
+        @Override
+        public GraphName getDefaultNodeName() {
+            return GraphName.of(&quot;ros_test&quot;);
+        }
+
+        @Override
+        public void onStart(ConnectedNode connectedNode) {
+            final Publisher&lt;std_msgs.String&gt; pub =  connectedNode.newPublisher(&quot;/test&quot;, String._TYPE);
+            connectedNode.executeCancellableLoop(new CancellableLoop() {
+                @Override
+                protected void loop() throws InterruptedException {
+                    std_msgs.String msg = pub.newMessage();
+                    msg.setData(&quot;hello world&quot;);
+                    pub.publish(msg);
+                    Thread.sleep(1000);
+                }
+            });
+        }
+
+        @Override
+        public void onShutdown(Node node) {
+
+        }
+
+        @Override
+        public void onShutdownComplete(Node node) {
+
+        }
+
+        @Override
+        public void onError(Node node, Throwable throwable) {
+
+        }
+    }, nodeConfiguration);
+}
+</code></pre><p>}</p>
+<p>编译后，在手机上运行App，在运行的ROS的主机上打印/test话题。</p>
+<p>手机要和Linux机器连接在同一个 Wi-Fi下，Linux上已修改 .bashrc文件，添加本机 IP。<br>Android程序中已配置ROS_MASTER_URL 地址。</p>
+<p>在 Linux 上新开一个 Terminal中运行以下命令：<br>$ roscore<br>新开一个terminal，cd 到 rosjava文件夹中，运行命令:<br>$ ros topic echo /test</p>
+<p><img src="/images/ROSJava环境搭建/009.png" alt="" class="post-img b-lazy" href="/images/ROSJava环境搭建/009.png" data-src="/images/ROSJava环境搭建/009.png"></p>
+<p>可以看到消息已经成功发送出来了。<br>到这Anroid端和Linux端的ROS通讯成功。</p>
+
+                </div>
+            </section>
+        </article>
+    </div>
+
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav class="pagination">
+        
+        <a class="prev-post" title="推荐我在Mac上常用的软件和网站" href="/2018/11/16/推荐我在Mac上常用的软件和网站/">
+            ← 推荐我在Mac上常用的软件和网站
+        </a>
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="Some feature of Objective-C" href="/2018/08/12/SomefeatureofObjective-C/">
+            Some feature of Objective-C →
+        </a>
+        
+    </nav>
+
+    
+</main>
+
+<div class="t-g-control">
+    <div class="gotop">
+        <svg class="icon" width="32px" height="32px" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z" fill="#8a8a8a"/></svg>
+    </div>
+    <div class="toc-control">
+        <svg class="icon toc-icon" width="32px" height="32.00px" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64" fill="#8a8a8a"/></svg>
+        <svg class="icon toc-close" style="display: none;" width="32px" height="32.00px" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z" fill="#8a8a8a"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z" fill="#8a8a8a"/></svg>
+    </div>
+    <div class="gobottom">
+        <svg class="icon" width="32px" height="32.00px" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z" fill="#8a8a8a"/></svg>
+    </div>
+</div>
+<div class="toc-main" style="right: -100%">
+    <div class="post-toc">
+        <span>TOC</span>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-ROS环境搭建"><span class="toc-text">1.ROS环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用下面命令："><span class="toc-text">使用下面命令：</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+
+
+	</div>
+	
+
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://images.unsplash.com/photo-1505304451-3b3b85a91afe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=908fce7ad78cd229ecc5a9a70b156ddf&auto=format&fit=crop&w=1189&q=80)">
+  <header class="read-next-card-header">
+    <small class="read-next-card-header-sitetitle">&mdash; JimmyLee 官网 &mdash;</small>
+    <h3 class="read-next-card-header-title">最新文章</h3>
+  </header>
+  <div class="read-next-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+      <path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/>
+    </svg>
+  </div>
+  <div class="read-next-card-content">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/2019/03/27/Golang 学习之旅 --- 代码实战/">Golang 学习之旅 --- 代码实战</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2019/03/25/Golang 学习之旅 --- 基础知识/">Golang 学习之旅 --- 基础知识</a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/2019/03/22/Golang 学习之旅 --- 前言/">Golang 学习之旅 --- 前言</a>
+      </li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+  </div>
+  <footer class="read-next-card-footer">
+    <a href="/archives">  MORE  → </a>
+  </footer>
+</article>
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://images.unsplash.com/photo-1505304451-3b3b85a91afe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=908fce7ad78cd229ecc5a9a70b156ddf&auto=format&fit=crop&w=1189&q=80)">
+    <header class="read-next-card-header" style="padding-bottom: 20px">
+        <h3 class="read-next-card-header-title">分类</h3>
+    </header>
+    <div class="read-next-card-content">
+        <ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/开发/">开发</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/生活/">生活</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/读书笔记/">读书笔记</a></li></ul>
+        </ul>
+    </div>
+</article>
+
+
+            
+            
+            
+
+<article class="read-next-card" style="background-image: url(https://images.unsplash.com/photo-1505304451-3b3b85a91afe?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=908fce7ad78cd229ecc5a9a70b156ddf&auto=format&fit=crop&w=1189&q=80)">
+	<header class="read-next-card-header" style="padding-bottom: 20px">
+		<h3 class="read-next-card-header-title">标签云</h3>
+	</header>
+	<div class="read-next-card-content-ext">
+		<a href="/tags/Hacker/" style="font-size: 14px;">Hacker</a> <a href="/tags/原创/" style="font-size: 24px;">原创</a> <a href="/tags/开发/" style="font-size: 14px;">开发</a> <a href="/tags/技术/" style="font-size: 19px;">技术</a> <a href="/tags/生活/" style="font-size: 16.5px;">生活</a> <a href="/tags/读书/" style="font-size: 21.5px;">读书</a>
+	</div>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+	
+
+
+
+
+<div id="search" class="search-overlay subscribe-overlay">
+    <div class="search-form">
+        
+        <img class="search-overlay-logo" src="https://i.loli.net/2018/11/12/5be8f0e84bea9.png" alt="JimmyLee 官网">
+        
+        <input id="local-search-input" class="search-input" type="search" name="search" placeholder="搜索 ...">
+        <a class="search-overlay-close" href="#"></a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<footer class="site-footer outer">
+	<div class="site-footer-content inner">
+		<section class="copyright">
+			<a href="/" title="JimmyLee 官网">JimmyLee 官网</a>
+			&copy; 2019
+    </section></div>
+</footer>
+	
+
+
+
+
+
+<script>
+    /*!
+  hey, [be]Lazy.js - v1.8.2 - 2016.10.25
+  A fast, small and dependency free lazy load script (https://github.com/dinbror/blazy)
+  (c) Bjoern Klinggaard - @bklinggaard - http://dinbror.dk/blazy
+*/
+  (function(q,m){"function"===typeof define&&define.amd?define(m):"object"===typeof exports?module.exports=m():q.Blazy=m()})(this,function(){function q(b){var c=b._util;c.elements=E(b.options);c.count=c.elements.length;c.destroyed&&(c.destroyed=!1,b.options.container&&l(b.options.container,function(a){n(a,"scroll",c.validateT)}),n(window,"resize",c.saveViewportOffsetT),n(window,"resize",c.validateT),n(window,"scroll",c.validateT));m(b)}function m(b){for(var c=b._util,a=0;a<c.count;a++){var d=c.elements[a],e;a:{var g=d;e=b.options;var p=g.getBoundingClientRect();if(e.container&&y&&(g=g.closest(e.containerClass))){g=g.getBoundingClientRect();e=r(g,f)?r(p,{top:g.top-e.offset,right:g.right+e.offset,bottom:g.bottom+e.offset,left:g.left-e.offset}):!1;break a}e=r(p,f)}if(e||t(d,b.options.successClass))b.load(d),c.elements.splice(a,1),c.count--,a--}0===c.count&&b.destroy()}function r(b,c){return b.right>=c.left&&b.bottom>=c.top&&b.left<=c.right&&b.top<=c.bottom}function z(b,c,a){if(!t(b,a.successClass)&&(c||a.loadInvisible||0<b.offsetWidth&&0<b.offsetHeight))if(c=b.getAttribute(u)||b.getAttribute(a.src)){c=c.split(a.separator);var d=c[A&&1<c.length?1:0],e=b.getAttribute(a.srcset),g="img"===b.nodeName.toLowerCase(),p=(c=b.parentNode)&&"picture"===c.nodeName.toLowerCase();if(g||void 0===b.src){var h=new Image,w=function(){a.error&&a.error(b,"invalid");v(b,a.errorClass);k(h,"error",w);k(h,"load",f)},f=function(){g?p||B(b,d,e):b.style.backgroundImage='url("'+d+'")';x(b,a);k(h,"load",f);k(h,"error",w)};p&&(h=b,l(c.getElementsByTagName("source"),function(b){var c=a.srcset,e=b.getAttribute(c);e&&(b.setAttribute("srcset",e),b.removeAttribute(c))}));n(h,"error",w);n(h,"load",f);B(h,d,e)}else b.src=d,x(b,a)}else"video"===b.nodeName.toLowerCase()?(l(b.getElementsByTagName("source"),function(b){var c=a.src,e=b.getAttribute(c);e&&(b.setAttribute("src",e),b.removeAttribute(c))}),b.load(),x(b,a)):(a.error&&a.error(b,"missing"),v(b,a.errorClass))}function x(b,c){v(b,c.successClass);c.success&&c.success(b);b.removeAttribute(c.src);b.removeAttribute(c.srcset);l(c.breakpoints,function(a){b.removeAttribute(a.src)})}function B(b,c,a){a&&b.setAttribute("srcset",a);b.src=c}function t(b,c){return-1!==(" "+b.className+" ").indexOf(" "+c+" ")}function v(b,c){t(b,c)||(b.className+=" "+c)}function E(b){var c=[];b=b.root.querySelectorAll(b.selector);for(var a=b.length;a--;c.unshift(b[a]));return c}function C(b){f.bottom=(window.innerHeight||document.documentElement.clientHeight)+b;f.right=(window.innerWidth||document.documentElement.clientWidth)+b}function n(b,c,a){b.attachEvent?b.attachEvent&&b.attachEvent("on"+c,a):b.addEventListener(c,a,{capture:!1,passive:!0})}function k(b,c,a){b.detachEvent?b.detachEvent&&b.detachEvent("on"+c,a):b.removeEventListener(c,a,{capture:!1,passive:!0})}function l(b,c){if(b&&c)for(var a=b.length,d=0;d<a&&!1!==c(b[d],d);d++);}function D(b,c,a){var d=0;return function(){var e=+new Date;e-d<c||(d=e,b.apply(a,arguments))}}var u,f,A,y;return function(b){if(!document.querySelectorAll){var c=document.createStyleSheet();document.querySelectorAll=function(a,b,d,h,f){f=document.all;b=[];a=a.replace(/\[for\b/gi,"[htmlFor").split(",");for(d=a.length;d--;){c.addRule(a[d],"k:v");for(h=f.length;h--;)f[h].currentStyle.k&&b.push(f[h]);c.removeRule(0)}return b}}var a=this,d=a._util={};d.elements=[];d.destroyed=!0;a.options=b||{};a.options.error=a.options.error||!1;a.options.offset=a.options.offset||100;a.options.root=a.options.root||document;a.options.success=a.options.success||!1;a.options.selector=a.options.selector||".b-lazy";a.options.separator=a.options.separator||"|";a.options.containerClass=a.options.container;a.options.container=a.options.containerClass?document.querySelectorAll(a.options.containerClass):!1;a.options.errorClass=a.options.errorClass||"b-error";a.options.breakpoints=a.options.breakpoints||!1;a.options.loadInvisible=a.options.loadInvisible||!1;a.options.successClass=a.options.successClass||"b-loaded";a.options.validateDelay=a.options.validateDelay||25;a.options.saveViewportOffsetDelay=a.options.saveViewportOffsetDelay||50;a.options.srcset=a.options.srcset||"data-srcset";a.options.src=u=a.options.src||"data-src";y=Element.prototype.closest;A=1<window.devicePixelRatio;f={};f.top=0-a.options.offset;f.left=0-a.options.offset;a.revalidate=function(){q(a)};a.load=function(a,b){var c=this.options;void 0===a.length?z(a,b,c):l(a,function(a){z(a,b,c)})};a.destroy=function(){var a=this._util;this.options.container&&l(this.options.container,function(b){k(b,"scroll",a.validateT)});k(window,"scroll",a.validateT);k(window,"resize",a.validateT);k(window,"resize",a.saveViewportOffsetT);a.count=0;a.elements.length=0;a.destroyed=!0};d.validateT=D(function(){m(a)},a.options.validateDelay,a);d.saveViewportOffsetT=D(function(){C(a.options.offset)},a.options.saveViewportOffsetDelay,a);C(a.options.offset);l(a.options.breakpoints,function(a){if(a.width>=window.screen.width)return u=a.src,!1});setTimeout(function(){q(a)})}});
+    ;(function() {var bLazy = new Blazy()})();
+</script>
+
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="JimmyLee 官网">
+			
+                <img src="https://i.loli.net/2018/11/12/5be8f0e84bea9.png" alt="JimmyLee 官网 icon">
+			
+            <span>JimmyLee 官网</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">RosJava环境搭建</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        // 阅读页面顶部进度条
+        var progressBar = document.querySelector('progress');
+        var header = document.querySelector('.floating-header');
+        var title = document.querySelector('.post-full-title');
+        var lastScrollY = window.scrollY;
+        var lastWindowHeight = window.innerHeight;
+        var lastDocumentHeight = $(document).height();
+        var ticking = false;
+        function onScroll() {
+            lastScrollY = window.scrollY;
+            requestTick();
+        }
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(update);
+            }
+            ticking = true;
+        }
+        function update() {
+            var rect = title.getBoundingClientRect();
+            var trigger = rect.top + window.scrollY;
+            var triggerOffset = title.offsetHeight + 35;
+            var progressMax = lastDocumentHeight - lastWindowHeight;
+
+            if (lastScrollY >= trigger + triggerOffset) {
+                header.classList.add('floating-active');
+            } else {
+                header.classList.remove('floating-active');
+            }
+            progressBar.setAttribute('max', progressMax);
+            progressBar.setAttribute('value', lastScrollY);
+            ticking = false;
+        }
+        window.addEventListener('scroll', onScroll, {passive: true});
+        update();
+
+        // TOC
+        var width = $('.toc-main').width();
+        $('.toc-control').click(function () {
+            if ($('.t-g-control').css('width')=="50px") {
+                if ($('.t-g-control').css('right')=="0px") {
+                    $('.t-g-control').animate({right: width}, "slow");
+                    $('.toc-main').animate({right: 0}, "slow");
+                    toc_icon()
+                } else {
+                    $('.t-g-control').animate({right: 0}, "slow");
+                    $('.toc-main').animate({right: -width}, "slow");
+                    toc_icon()
+                }
+            } else {
+                if ($('.toc-main').css('right')=="0px") {
+                    $('.toc-main').slideToggle("fast", toc_icon());
+                } else {
+                    $('.toc-main').css('right', '0px');
+                    toc_icon()
+                }
+            }
+        })
+        function toc_icon() {
+            if ($('.toc-icon').css('display')=="none") {
+                $('.toc-close').hide();
+                $('.toc-icon').show();
+            } else {
+                $('.toc-icon').hide();
+                $('.toc-close').show();
+            }
+        }
+
+        // 回到顶部
+        $('.gotop').click(function(){
+            $('html,body').animate({scrollTop:$('.post-full-header').offset().top}, 800);
+        });
+        $('.gobottom').click(function () {
+            $('html,body').animate({scrollTop:$('.pagination').offset().top}, 800);
+        });
+
+        // highlight
+        // https://highlightjs.org
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+        $('td.code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+    });
+</script>
+
+
+<script src="https://cdn.staticfile.org/highlight.js/9.10.0/highlight.min.js"></script>
+
+
+
+
+
+
+
+<script src="https://cdn.staticfile.org/lightgallery/1.3.9/js/lightgallery.min.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdn.staticfile.org/lightgallery/1.3.9/css/lightgallery.min.css">
+
+
+<script>
+    $(function () {
+        $('#lightgallery').lightGallery({
+            selector: '.post-img'
+        });
+    });
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript"> 
+    // 保存搜索数据
+    var keepSearchData = function () {
+        fetch('/searchData.json')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(resData) {
+            localStorage.setItem('searchData', JSON.stringify(resData));
+        })
+    }
+
+    // 检查和获取搜索数据
+    var checkAndGetData = function () {
+        fetch('/searchVersion.txt?t=' + (+new Date()))
+        .then(function(response) {
+            return response.text();
+        })
+        .then(function(resVersion) {
+            if (localStorage.getItem('searchVersion') !== resVersion) {
+                localStorage.setItem('searchVersion', resVersion);
+                keepSearchData()
+            }
+        })
+        searchFunc("local-search-input", "local-search-result");
+    }
+
+    // 监听搜索
+    var searchFunc = function(search_id, content_id) {
+        'use strict'
+        var localSearchData = localStorage.getItem("searchData");
+        var datas = JSON.parse(localSearchData);
+        var input = document.getElementById(search_id);
+        if (!input) return;
+        var resultContent = document.getElementById(content_id);
+        input.addEventListener("input", function() {
+            if (typeof(localSearchData) !== 'string') {
+                localSearchData = localStorage.getItem("searchData");
+                datas = JSON.parse(localSearchData);
+            }
+            var str = '<ul class="search-result-list">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+                return;
+            }
+            datas.forEach(function(data) {
+                var isMatch = true;
+                var content_index = [];
+                if (!data.title || data.title.trim() === "") {
+                    data.title = "Untitled";
+                }
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                var data_url = data.url;
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                if (data_content !== "") {
+                    keywords.forEach(function(keyword, i) {
+                        index_title = data_title.indexOf(keyword);
+                        index_content = data_content.indexOf(keyword);
+                        if (index_title < 0 && index_content < 0) {
+                            isMatch = false;
+                        } else {
+                            if (index_content < 0) {
+                                index_content = 0;
+                            }
+                            if (i == 0) {
+                                first_occur = index_content;
+                            }
+                        }
+                    });
+                } else {
+                    isMatch = false;
+                }
+                if (isMatch) {
+                    str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                    var content = data.content.trim().replace(/<[^>]+>/g, "");
+                    if (first_occur >= 0) {
+                        var start = first_occur - 20;
+                        var end = first_occur + 80;
+                        if (start < 0) {
+                            start = 0;
+                        }
+                        if (start == 0) {
+                            end = 100;
+                        }
+                        if (end > content.length) {
+                            end = content.length;
+                        }
+                        var match_content = content.substr(start, end);
+                        keywords.forEach(function(keyword) {
+                            var regS = new RegExp(keyword, "gi");
+                            match_content = match_content.replace(regS, '<em class="search-keyword">' + keyword + "</em>");
+                        });
+                        str += '<p class="search-result">' + match_content + "...</p>";
+                    }
+                    str += "</li>";
+                }
+            });
+            str += "</ul>";
+            resultContent.innerHTML = str;
+        });
+    };
+
+    checkAndGetData()
+</script>
+
+
+</body>
+</html>
