@@ -1,0 +1,13 @@
+---
+layout: post
+title: "First"
+subtitle: 'First Bolg using jekyll'
+author: "YYGX"
+header-style: text
+tags:
+  - Vim
+---
+
+我的第一个个人博客～
+
+---
