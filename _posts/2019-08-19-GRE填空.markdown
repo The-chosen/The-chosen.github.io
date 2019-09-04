@@ -1,3 +1,14 @@
+---
+layout: post
+title: "GRE填空"
+subtitle: 'GRE填空部分'
+author: "YYGX"
+header-style: text
+tags:
+  - GRE
+---
+
+
 每个section有10个填空 10个阅读
 一场考试总共20/30个填空题（30个就是有加试）
 第一个sec固定好了，就是2314。三空题目数量跟难度没有直接关系。

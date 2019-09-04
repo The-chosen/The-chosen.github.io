@@ -1,3 +1,14 @@
+---
+layout: post
+title: "GRE阅读"
+subtitle: 'GRE阅读部分'
+author: "YYGX"
+header-style: text
+tags:
+  - GRE
+---
+
+
 ![](https://upload-images.jianshu.io/upload_images/7602326-06201586a576934e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
 界面和托福差不多，就是反一反
