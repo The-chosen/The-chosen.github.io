@@ -128,9 +128,11 @@ GRE里面apple和fruit就是同义词
 
 ![俩空对应取同](https://upload-images.jianshu.io/upload_images/7602326-5547aab39c830144.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
-![Though A, B: C](https://upload-images.jianshu.io/upload_images/7602326-78011a1092a15255.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Though A, B: C](https://upload-images.jianshu.io/upload_images/7602326-78011a1092a15255.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
 ![](https://upload-images.jianshu.io/upload_images/7602326-84f9e4275d0d5aa8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
+
+![](https://upload-images.jianshu.io/upload_images/7602326-ccc4029060e896f9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
 
 #### 6 指示代词
@@ -165,3 +167,4 @@ A girl sitting on the roof.
 2. 只有句号是句间关系，否则都是句内关系
 3. while + surprising只取一次反
 4. 主宾颠倒，（要求）动词一致。就是A_B = B_A （就像汉语里面的把字句和被字句：我打你，你被我打）
+5. while ..., nevertheless ... 就是中文里的虽然但是（这里可以放一起是因为while是连词，nevertheless是副词，而although和but不放一起就是因为这俩都是连词）。另外but和nevertheless一起出现也是只取反一次
