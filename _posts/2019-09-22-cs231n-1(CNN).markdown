@@ -1,0 +1,20 @@
+---
+layout: post
+title: "1. Introduction to CNN for visual recognition"
+subtitle: 'intro to CNN'
+author: "YYGX"
+header-style: text
+tags:
+  - cs231n
+---
+
+
+# 1. intro to CNN
+## 1.1. CV problems:
+- image classification
+- object localization
+- object detection
+- scene understanding.
+
+## 1.2. dataset
+ImageNet is one of the biggest datasets in image classification available right now.

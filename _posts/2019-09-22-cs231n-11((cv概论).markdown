@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "cs231n-cv概述"
+title: "11. Detection and Segmentation"
 subtitle: 'cv的四个任务的介绍与归类'
 author: "YYGX"
 header-style: text
 tags:
-  - Computer Vision
+  - cs231n
 ---
+
+[TOC]
 
 # 1 CV任务概述
 参考该github：
@@ -78,6 +80,7 @@ faster但是不那么accurate
 ## 7. 最好的方法总结
 - Faster R-CNN is slower but more accurate.
 - SSD/YOLO is much faster but not as accurate.
+
 # 5 Dense Captioning
 Object Detection + Captioning
 介绍论文链接；
