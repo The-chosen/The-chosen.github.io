@@ -10,7 +10,7 @@ tags:
 
 
 # 1. SVM loss
-![image.png](https://i.loli.net/2019/09/23/6pMLXk2mRG81Ved.png)
+![image.png](https://i.loli.net/2019/09/24/W4iur3ERYOjqXkx.png)
 
 `L = max (0, 437.9 - (-96.8) + 1) + max(0, 61.95 - (-96.8) + 1) = max(0, 535.7) + max(0, 159.75) = 695.45`
 
@@ -43,8 +43,9 @@ SVM等到错误的比正确的那个的数值低一个阈值就完事了，然�
 
 `W = W - learning_rate * W_grad`
 
-SGD：
-
+SGD(Stochastic Gradient Descent)：
+随机梯度下降，就是如果用所有的数据就会非常消耗计算资源
+而SGD只是随机的选择其中的一部分
 
 # 5. 特征工程
 在出现dl之前，人们手动标注特征，启发其实就是特征转换，某些复杂的特征经过转换可以直接变成简单的特征，比如下图(直角坐标系向极坐标系的转换)：
