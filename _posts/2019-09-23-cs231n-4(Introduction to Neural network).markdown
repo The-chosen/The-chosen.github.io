@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "5. Convolutional neural networks (CNNs)"
-subtitle: 'Convolutional neural networks (CNNs)'
+title: "4. Introduction to Neural network"
+subtitle: 'Introduction to Neural network'
 author: "YYGX"
 header-style: text
 tags:
