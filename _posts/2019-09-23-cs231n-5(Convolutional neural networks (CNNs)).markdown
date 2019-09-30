@@ -15,7 +15,7 @@ all the neurons are connected
 # 2. Convolution layer
 就是过滤器在前一层滑动，每一个位置就对应一个值（点乘）。过滤器的深度就等于前一层的深度。
 
-output of convolution layer 叫做 activation map
+output of convolution layer 叫做 activation map。注意：一个filter产生的输出就叫做一个activation map
 
 一开始的卷积层学一些lower feature，靠后的卷积层学一些higher feature
 
