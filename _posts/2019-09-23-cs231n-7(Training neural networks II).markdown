@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "6. Training neural networks II"
+title: "7. Training neural networks II"
 subtitle: 'Training neural networks II'
 author: "YYGX"
 header-style: text
@@ -73,3 +73,14 @@ L-BFGS
 
 In practice first use ADAM and if it didn't work try L-BFGS！
 
+# 2 正则化
+### 2.1 model ensembles
+1. Train multiple independent models
+2. At test time average their results
+
+一般会有2%的效果提升
+
+### 2.2 dropout
+前向传播的时候，随机地把一些neurons设置为0
+
+0.5的drop比率是通常的选择

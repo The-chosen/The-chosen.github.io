@@ -1,0 +1,216 @@
+---
+layout: post
+title: "COGS9笔记"
+subtitle: 'COGS9的课程笔记总结'
+author: "YYGX"
+header-style: text
+tags:
+  - COGS9
+---
+
+
+# 1. Intro to data science
+
+## 2. Definition of data science
+- Data science != machine learning
+![image.png](https://i.loli.net/2019/10/11/sp8ZXjfQlT1Dvun.png)
+- Def: The scientific process of extracting value from data
+
+## 3. What do data scientists do
+Data scientists ask interesting questions & answer them with data
+
+## 4. Questions
+- What questions should I ask on a first date?
+- Studying coordinated migration
+- How do I improve ride sharing?
+
+## 5. About this course
+- This is a 'survey' course.
+- Topics:
+    - Data Science & Ethics
+    - Version Control & Programming
+    - Data & Data Wrangling
+    - Data Visualization & Communication
+    - Approaches to Data Analysis
+- Exams:
+    - Mon Oct 21st - “What is Data Science” through “Data Wrangling”
+    - Mon Dec 2nd - “Data Visualization” through Guest Lectures
+
+# 2. Ethics
+
+## 1. About Reading1
+- What points were made that you had not previously considered?
+- What points do you agree with? With which do you disagree?
+- What do you not understand? (Ask questions about these in section!)
+- What points/topics do you think are missing?
+- Does anything differ with what you’ve learned in other classes? Other papers/books?
+- What ideas did this reading give you? What do you want to go learn more about?
+
+# 3. Data science questions
+
+## 1. Data science process
+- ask an instreresting question
+- get the data
+- explore the data
+- model the data
+- communicate and visualize the results
+
+## 2. Question
+- Be specific
+- Be answerable with data
+- Specify what’s being measured
+
+# 4. Reproducibility
+## 1. Definition of reproducibility
+Re-performing the same analysis (with the same code) using a different analyst
+
+## 2. Why haven’t we always been reproducible?
+- Data science education and effective communication can improve these!
+  - Lack of statistical literacy
+  - Lack of computational literacy
+- These can largely be addressed with fairly simple changes!
+  - Failure to publish code
+  - Lack of mechanism for peer-reviewing code
+  - Lack of transparency in review of papers
+- Others
+  - Lack of incentive / funds
+
+## 3. Definition of Replicable
+Re-performing the experiment and collecting new data
+
+Replicability is harder than reproducibility(Because the data is different & data is variable)
+
+Defin: The measurement can be obtained with stated precision by a different team using
+the same measurement procedure, the same measuring system, under the same
+operating conditions, in the same or a different location on multiple trials.
+
+## 4. Why would a study fail to replicate?
+- Finding was not “real” (or small effect)
+- Measurement error
+- Variable finding (i.e. time)
+- Different population
+- Different experimental design or conditions
+
+## 5. Confirmation Bias
+A cognitive bias wherein humans have a tendency to search for, interpret,
+favor, and recall information in a way that confirms one's preexisting
+beliefs or hypotheses.
+
+# 5. Programming
+## 1. workflow => Think-Try-Read
+1. Think about what it is you want to do.
+2. Try it out.
+    1. If you succeed, awesome.
+    2. If not, continue on...
+3. Read to try to figure out the answer (Google/Stack Overflow/books/your friend/etc.).
+4. Wash, Rinse, Repeat.
+
+# 6. File management 
+## 1. Version Control
+A way to manage the evolution of a set of files
+- Enables multiple people to simultaneously work on a single project.
+- Each person edits their own copy of the files and chooses when to share those
+changes with the rest of the team.
+- Thus, temporary or partial edits by one person do not interfere with another
+person's work
+
+## 2. File name
+- Machine readable
+- Human readable
+- Nicely ordered
+
+# 7. Data
+## 1. Variable Types
+- Quantitative
+  - Integers (whole numbers, i.e. 10)
+  - Continuous: Float or Numeric (200.78)
+- Qualitative
+  - String or Character (“Hello World”)
+  - Categorical or Discrete (limited number of options) - (i.e. minor, adult)
+
+## 2. categorize data storage
+- Semi-structured*
+  - spreadsheets (tabular data)
+  - JSON & XML
+- Structured
+  - relational databases (SQL)
+- Unstructured
+  - everything else: video, audio, images, websites, apps, text, etc.
+
+Data Scientists work with semi-structured data most frequently, but have to familiar with and comfortable in all types
+
+# 8. Getting data
+## 1. Where
+1. All in nice spreadsheet
+- Open data
+  - www.kaggle.com
+  - data.world
+  ...
+
+2. Not in nice spreadsheet
+- HTTP(If there's API)
+- WEB SCRAPING(If there's not API)
+
+Use API
+Accessing an API
+1. Choose Method
+2. Build URL
+3. Get Authorization
+
+# 9. Data wrangling
+## 1. Tidy Data Benefits
+1. consistent data structure
+2. foster tool development
+3. require only a small set of tools to be learned
+4. allow for datasets to be combined
+
+![image.png](https://i.loli.net/2019/10/21/EyoP6l2RSe7TYhq.png)
+
+## 2. steps
+- Step 1: Join columns from separate tables by ID
+- Step 2: Select columns from
+separate tables you want
+included in your output
+- Step 3: Arrange rows to order
+by series and then by episode
+- Step 4: Mutate & Summarize
+to add columns
+
+
+
+
+
+---
+
+# Useful Iclicker Questions:
+
+## 1. Common rules
+- Requirements for assuring compliance by research institutions
+- Requirements for researchers' obtaining and documenting informed consent
+- Requirements for Institutional Review Board (IRB) membership, function, operations, review of research, and record keeping.
+- Protections for certain vulnerable research subjects
+  - pregnant women
+  - in vitro fertilization and fetuses
+  - prisoners
+  - children
+
+## 2. File name
+Which of the following is the BEST file name?
+
+A) 01_beets_yield_report.pdf
+
+B) BeetsYieldReport.pdf
+
+C) beets_yield_report_01.pdf
+
+D) BeetsYieldReport_01.pdf
+
+E) 01_BeetsYieldReport.pdf
+
+choose A)
+
+---
+
+# Problems about reading
+## 1. Which of the following would count as SoDS?
+![image.png](https://i.loli.net/2019/10/21/7xErNcuPeFQaC5d.png)
