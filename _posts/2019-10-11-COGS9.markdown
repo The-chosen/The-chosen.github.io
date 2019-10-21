@@ -11,20 +11,20 @@ tags:
 
 # 1. Intro to data science
 
-## 2. Definition of data science
+## 1. Definition of data science
 - Data science != machine learning
 ![image.png](https://i.loli.net/2019/10/11/sp8ZXjfQlT1Dvun.png)
 - Def: The scientific process of extracting value from data
 
-## 3. What do data scientists do
+## 2. What do data scientists do
 Data scientists ask interesting questions & answer them with data
 
-## 4. Questions
+## 3. Questions
 - What questions should I ask on a first date?
 - Studying coordinated migration
 - How do I improve ride sharing?
 
-## 5. About this course
+## 4. About this course
 - This is a 'survey' course.
 - Topics:
     - Data Science & Ethics
