@@ -176,7 +176,57 @@ by series and then by episode
 - Step 4: Mutate & Summarize
 to add columns
 
+# 10. Data visualization
 
+## 1. Information about a single set of numbers
+1. Histograms: Range of possible height values is easily visualized
+2. Densityplot: Demonstrates the distribution of the data (A smoothed version of a histogram)
+
+## 2. Relationship between two numerical variables
+1. Scatteplot
+
+## 3. Count of values within a categorical variable
+1. Barplot: Can easily see that there are more females than males
+
+## 4. Summary of numerical values across categories
+1. Boxplot: The middle line represents the median & tells you the typical height for females and males
+
+## 5. Effective ways to display data summaries
+1. Table: Tables count as data visualizations!
+
+# 11. Descriptive Data Analysis
+## 1. Descriptive:
+The goal of descriptive analysis is to understand the components of a data set, describe
+what they are, and explain that description to others who might want to understand the data.
+
+## 2. sampling & statistics
+- Statistics: the science that deals with the **collection, classification, analysis, and interpretation of numerical facts or data**, and that, by use of mathematical theories of probability, imposes order and regularity on aggregates of more or less disparate elements.
+- sampling: need to be random and no-bias
+
+## 3. How to describe a dataset
+- Shape: It’s critical to know the distribution of the variables in your dataset because certain statistical approaches can only be used with certain distributions.
+- Size
+- Central Tendency
+- Missingness: It’s critical to know how many observations have missing data for variables of interest in your data.
+- Variability
+
+## 4. Outlier
+- Data entry errors
+- Poor sampling procedures
+- Technical or mechanical error
+- Unexpected changes in weather
+- People providing inaccurate information
+
+Caution: Observations should only be removed from your dataset if you have a valid reason to do so.
+
+## 5. mean, median, and/or mode
+The mode is the most frequently observed category
+- Range: highest score - lowest score
+- Interquartile Range (IQR): 75th percentile - 25th percentile
+- variance: measures how close the values in the distribution are to the middle of the distribution - average squared difference of the scores from the mean
+- standard deviation (SD): square-root of the variance
+
+![image.png](https://i.loli.net/2019/10/23/op7gz8GC9wUuBX1.png)
 
 
 
