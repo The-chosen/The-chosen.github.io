@@ -228,6 +228,18 @@ The mode is the most frequently observed category
 
 ![image.png](https://i.loli.net/2019/10/23/op7gz8GC9wUuBX1.png)
 
+# 12 EDA(Exploratory Data Analysis)
+Answers the question “What can the data tell us?”
+
+## 1. EDA Approaches to “Get a Feel for the Data”
+![image.png](https://i.loli.net/2019/10/25/59Dhwu7nUyzPYeI.png)
+
+## 2. When NOT to do EDA
+- To identify samples that you can remove from your study after you’ve already analyzed the data
+- After running a statistical test and seeing that your p-value is 0.054
+- After completing an analysis and getting an answer you don’t like
+- To improve the correlation between two variables
+
 
 
 ---
