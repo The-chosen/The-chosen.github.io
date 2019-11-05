@@ -1,0 +1,28 @@
+---
+layout: post
+title: "COGS9笔记"
+subtitle: 'COGS9的课程笔记总结'
+author: "YYGX"
+header-style: text
+tags:
+  - DL
+---
+
+Need to watch(avg=50min):
+- l3*
+- l4
+- l5
+- l8
+- l9
+- l11
+- l14
+- l15
+- l16
+
+# l3. maximum likelihood
+## 1. Gaussian distribution
+Mean and variance are called the sufficient statistics. Because they are sufficient to draw the whole distribution.
+
+The area under the curve: probability = 1
+
+

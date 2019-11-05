@@ -1,0 +1,23 @@
+---
+layout: post
+title: "COGS9笔记"
+subtitle: 'COGS9的课程笔记总结'
+author: "YYGX"
+header-style: text
+tags:
+  - ML
+---
+
+Need to watch(avg = 1.1h):
+- UBC
+    - l6
+    - l7
+    - l8
+    - l9
+    - l10
+    - l11
+    - l12
+    - l13
+    - l14
+    - l20
+    - l21

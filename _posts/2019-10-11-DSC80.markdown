@@ -1,0 +1,277 @@
+---
+layout: post
+title: "DSC80期中总结"
+subtitle: 'DSC80期中知识模糊点总结'
+author: "YYGX"
+header-style: text
+tags:
+  - DSC80
+---
+
+This is the summary note of DSC80(Fall 2019) in UCSD. Part of this note is derived from the course jupyter notebook. This is the link of this course's main page: https://sites.google.com/eng.ucsd.edu/dsc-80-fall-2019
+
+# 期中复习(仅记录不确定的要点)
+
+## Lecture 1 & 2 
+axis = 0 和 axis = 1的区别记忆:
+
+一般方法的默认都是axis=0
+
+然后axis = 1就是方法结束后行数是不会变的, axis = 0方法结束之后列数是不会变的
+
+## Lecture 3. Messay data
+![image.png](https://i.loli.net/2019/11/05/IPwq2LZYADdgB9M.png)
+
+- quantiattive data
+math model on it
+
+- Categorical data
+    - Ordinal: can't do math
+    - Nominal: just labels, no order
+
+---
+
+```
+# Danger! 就是强行的数据类型的转换，然后有error的地方就设置为NaN
+df['DSC 80 Final Grade'] = pd.to_numeric(df['DSC 80 Final Grade'], errors='coerce')
+```
+
+---
+
+* The result of *any* comparison (=,!=,<,>) with `NaN` is `False`.
+     - Use functions for checking null: `np.isnan`, `np.isnull`
+* `NaN` is of float-type.
+* Be careful of Pandas type-coercian with `NaN`!
+
+## Lecture 4. Testing Hypotheses
+### 1. test statistic
+Measure information that answers the questions we're trying to answer.
+
+- **Difference in means**: is similar to the absolute difference in means except that the difference is "directional". When you use the difference in means as a test statistic in a permutation test, you must specify the direction of your alternative hypothesis.
+- **Absolute difference in means**: compares a measure of center of the two distributions
+- **KS**: compares the overall shape of the two distributions. Have lower p-values. In cases where you want to test whether two quantitative distributions are different, the ks statistic is often more preferable for this reason.
+### 2. Null and alternative
+* The method only works if we can simulate data under one of the hypotheses.
+* **Null hypothesis**: <br>Often (but not always) the null hypothesis states there is no association or difference between variables or subpopulations. Null hyp必然是俩sample相等,也就是**A = B**这样的.
+    - A well defined probability model about how the data were generated
+    - We can simulate data under the assumptions of this model – “under the null hypothesis”
+* **Alternative hypothesis**: <br>Hypothesis that sample observations are influenced by some non-random cause (unlike Null Hypothesis). Altern hyp必然是俩sample不等的样子,至于是> / < / !=, 取决于你想要test什么.如果你想要测试**A > B**,那altern hy就是**A > B**.
+    - A different view about the origin of the data
+
+### 3. P-value (observed significance level)
+The P-value is the chance, under the null hypothesis, that the test statistic is equal to the value that was observed in the data or is even further in the direction of the alternative.
+
+* **“Inconsistent”**: The test statistic is in the tail of the empirical distribution under the null hypothesis
+
+* **“In the tail,” first convention**:
+    - The area in the tail is less than 5%
+    - The result is “statistically significant”
+
+* **“In the tail,” second convention**:
+    - The area in the tail is less than 1%
+    - The result is “highly statistically significant”
+
+## Lecture 5. Data Granularity
+
+![image.png](https://i.loli.net/2019/11/05/Cask7V6oLByvqpm.png)
+
+* **split** breaks up and groups a `DataFrame` depending on the value of the specified key.
+* **apply** computes a function (e.g. aggregate, transformation, or filtering) within the individual groups.
+* **combine** merges the results of these operations into an output array.
+
+---
+
+* `dataframe.groupby(key)` returns a `DataFrameGroupBy` object.
+* `.group` is a dictionary of grouping keys and the corresponding dataframe
+* `.get_group(key)` method returns a dataframe corresponding to the given key
+
+---
+
+* We will commonly combine `groupby` with column selection:
+    - e.g., `df.groupby("Region")["Sales"]` 
+* Then add an aggregate calculation on that column:
+
+---
+
+aggregate:
+```
+# aggregate
+
+def avg_str_len(series):
+    return series.str.len().mean()  # purpose?
+
+res = (
+    people
+        .groupby(["Color", "Gender"])
+        .aggregate({"Name": avg_str_len, "Number": np.mean})  #就是把方法用到那个列上面
+)
+```
+
+---
+
+pivot / pivot_table
+
+
+
+## Lecture 6. combining data
+### 1. pd.concat()
+上下合并
+`pd.concat([class_1,class_2], ignore_index=True)`
+
+### 2. merge()
+`df3 = df1.merge(df2)`
+默认采用inner merge
+
+merge的方法选择使用`how`属性:
+`df3_outer = pd.merge(df1, df2, how = "outer")`
+总共4种:
+- inner
+- outer 
+- left
+- right
+
+若俩df有好几个相同的列,那么要用`on`来表示根据哪一列来merge
+
+可以加`suffix = ()`来区分那些没选中的相同列 
+
+### 3. join()
+`df1.join(df2)`
+默认采用left join
+
+是根据df2的索引来join的
+
+
+## Lecture 7. permutation test
+### 1. Testing through simulation
+
+- **Statistic**: Difference between means.
+- **Null hypothesis**: The two groups are sampled from the same distribution.
+- Note that the null hypothesis doesn't say *what* the distribution is.我感觉这就是判断用hyp还是per的关键处,就是simul的时候,能不能直接根据distr来生成samples
+    - Different from jury panel example, fair coin example, etc.
+    - We can't draw directly from the distribution!
+- We have to do something a bit more clever.
+
+### 2. Permutation tests
+
+- Perhaps the difference in means we saw is due to random chance in assignment.
+- **Permutation test**: Shuffle the group labels a bunch of times; how often do we see a statistic this extreme?
+- Randomly permuting labels is equivalent to randomly assigning birth weights to groups (without changing group sizes)
+- If we *rarely* see something this extreme, then the null hypothesis doesn't look likely.
+
+**It doesn't matter which column we shuffle!**
+
+### 3. Permutation Test Summary
+* A permutation test *is a hypothesis test*
+    - Null hypothesis states "two observations come from same distribution". (空假设就是俩分布相等)
+    - Simulate null hypothesis using *permutations*.
+* Don't have to know *what* the distributions are!
+* When test-statistic is is difference-in-means <=> two sample t-test
+* Permutation tests are more generally applicable.
+
+### 4. Permutation使用总结
+凡是使用到permutation其实就是会出现俩variables.
+- 一个var必然是categorical的,就是按照这个来归类的(设该var为G).
+- 另外一个var有两种情况:
+    - 一种是这个var是quantitative的,这样就直接使用groupby的方法.然后根据统计量的选择进行不同的操作.
+        - difference in mean: groupby()之后用mean()+diff()+iloc就行了:
+            ```
+            smoking_and_birthweight.groupby('Maternal Smoker').mean().diff().iloc[-1,0]
+            ```
+        - absolute difference in mean: 同上,只不过diff之后abs一下
+        - KS:
+            ```
+            grps = shuffled.groupby('group')['data']
+            ks = ks_2samp(grps.get_group('A'), grps.get_group('B')).statistic
+            ```
+    - 一种是这个var是categorical的,这样就要使用pivot_table(aggfunc='size') + 归一 + TVD(就是两列1范数的差除以2):
+        ```
+            # compute the tvd
+            shuffled = (
+                shuffled
+                .pivot_table(index='is_null', columns='gender', aggfunc='size')
+                .apply(lambda x:x / x.sum(), axis=1)
+            )        
+            tvd = shuffled.diff().iloc[-1].abs().sum() / 2
+        ```
+**absolute difference in mean 是求平均值的差的绝对值. TVD是直接做差取绝对值再求和,另外TVD只能用在categorical的情况下**        
+
+**missing 的type判断就是permutation的应用而已,无非是G的分类是按照isnull来的.**
+## Lecture 8. Missingness Mechansisms
+
+### 1. Understanding how data is absent
+
+#### Missing by Design (MD)
+* The field being absent is deterministic. 
+* A function of the rows of the dataset that can:
+    - exactly predict when a colum will be null,
+    - with only knowledge of the other columns.
+
+#### Unconditionally ignorable (MCAR)
+* The missing value isn't associated to the (actual, unreported) value itself, nor the values in any other fields.
+* The missingness is unconditionally uniform across rows.
+* Example 1: follow-up survey questions on a random sample of respondents.
+* Example 2: Water damage to paper forms prior to entry (assuming shuffled forms).
+
+
+#### Conditionally Ignorable (MAR)
+* A missing value may depend only on values of other fields, but not its own.
+* The missingness is uniform across rows, perhaps conditional on another column.
+* Example 1: For really sick patients, clinicians may not draw blood for routine labs.
+* Example 2: People working in a Service Industry are less likely to report their income.
+
+
+#### Non-Ignorable (NMAR)
+**注意! NMAR是指缺失的原因跟这些缺失的值有关,也就是某var缺失值,看跟这个var缺失的那些值有没有关系.而非指跟其他没写上去的var有没有关系!**
+* A missing value depends on the value of the (actual, unreported) variable that's missing.
+* Example 1: people with high income are less likely to report income.
+* Example 2: a person doesn't take a drug test because they took drugs the day before.
+
+### 2. simulate的逻辑
+就是permutation的应用.这种都是俩列,一列是含有缺失值的(记为M),一列是要去看有木有MAR的(记为D)
+
+null hype就是M中missing的data对应到D中的那些data的distr和M中not missing的data对应到D中的那些data的distr是一样的.
+
+后面步骤就是常规的那些了.
+
+## Lecture 9. Data Imputation
+### 1. ways of dealing with missing data
+
+#### 1. dropna(就是删去一整行数据)
+Only MCAR is unbias
+
+For others, it's bad.
+
+#### 2. imputation
+* imputation with a single value: mean, median, mode
+* imputation with a single value, using a model: regression, kNN
+* (probabilistic) imputation by drawing from a distribution
+```
+heights_mar_cat_mfilled = heights_mar_cat.fillna(heights_mar_cat.child.mean())
+```
+
+
+##### 1. imputation with single value
+1. imputation with mean on whole
+* Imputing a missing value with the mean:
+    - preserves the mean of the observed data
+    - decreases the variance
+    - biases the means across groups when not *MCAR*
+<br>即总体无偏但是如果不是MCAR就每一组有偏
+
+2. imputation with mean in each group (group-wise mean imputation)
+<br>When using MAR data, mean imputation will cause bias in each group.
+<br>But it is MCAR in each group of MAR, so can do mean imputation in each group.
+
+
+##### 2. imputation with distribution
+* We can *probalistically* impute missing data from a distribution.
+    - Fill in missing data by drawing from the distribution of *non-missing* data.
+
+##### 3. Multiple imputation
+说白了,就是n多个填充列取平均得到的东西
+
+* **Imputation**: Impute a missing data multiple times (m times)
+* **Analysis**: Analyze each complete dataset separetly (m sets)
+* **Pooling**: Combine multiple analysis result. M estimates result in the final estimate.
+
+
