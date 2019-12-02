@@ -44,12 +44,14 @@ df['DSC 80 Final Grade'] = pd.to_numeric(df['DSC 80 Final Grade'], errors='coerc
 * Be careful of Pandas type-coercian with `NaN`!
 
 ## Lecture 4. Testing Hypotheses
+
 ### 1. test statistic
 Measure information that answers the questions we're trying to answer.
 
 - **Difference in means**: is similar to the absolute difference in means except that the difference is "directional". When you use the difference in means as a test statistic in a permutation test, you must specify the direction of your alternative hypothesis.
 - **Absolute difference in means**: compares a measure of center of the two distributions
 - **KS**: compares the overall shape of the two distributions. Have lower p-values. In cases where you want to test whether two quantitative distributions are different, the ks statistic is often more preferable for this reason.
+
 ### 2. Null and alternative
 * The method only works if we can simulate data under one of the hypotheses.
 * **Null hypothesis**: <br>Often (but not always) the null hypothesis states there is no association or difference between variables or subpopulations. Null hyp必然是俩sample相等,也就是**A = B**这样的.
