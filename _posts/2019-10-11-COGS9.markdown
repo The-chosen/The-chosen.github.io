@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "COGS9笔记"
-subtitle: 'COGS9的课程笔记总结'
+title: "COGS9 Note"
+subtitle: 'COGS9 Course Notes'
 author: "YYGX"
 header-style: text
 tags:
-  - COGS9
+  - UCSD-COGS9
 ---
 
 

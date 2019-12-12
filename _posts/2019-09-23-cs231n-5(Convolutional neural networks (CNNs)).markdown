@@ -5,7 +5,7 @@ subtitle: 'Convolutional neural networks (CNNs)'
 author: "YYGX"
 header-style: text
 tags:
-  - cs231n
+  - Stanford-CS231N
 ---
 
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "DSC80期中总结"
-subtitle: 'DSC80期中知识模糊点总结'
+title: "DSC80 Note (Simplified Version)"
+subtitle: 'DSC80 note(Summary from jupyter notebooks from course resources)'
 author: "YYGX"
 header-style: text
 tags:
-  - DSC80
+  - UCSD-DSC80
 ---
 
-This is the summary note of DSC80(Fall 2019) in UCSD. Part of this note is derived from the course jupyter notebook. This is the link of this course's main page: https://sites.google.com/eng.ucsd.edu/dsc-80-fall-2019
+>This is the summary note of DSC80(Fall 2019) in UCSD. Part of this note is derived from the course jupyter notebook. This is the link of this course's main page: https://sites.google.com/eng.ucsd.edu/dsc-80-fall-2019
 
-# 期中复习(仅记录不确定的要点)
+# Notes
 
 ## Lecture 1 & 2 
 axis = 0 和 axis = 1的区别记忆:
@@ -377,7 +377,9 @@ re.findall(pat, s)
 ### 5. TF-IDF
 - tf(term frequency):  likelihood of the term appearing in the document 
 - idf(inverse document frequency): <br>
-$\log(\frac{{\rm\ total\ number\ of\ documents}}{{\rm number\ of\ documents\ in\ which\ t\ appears}})$
+$$
+\log(\frac{{\rm\ total\ number\ of\ documents}}{{\rm number\ of\ documents\ in\ which\ t\ appears}}) 
+$$
 
 ```
 tfidf = pd.DataFrame([], index=sentences.index)  # dataframe of documents
@@ -387,6 +389,7 @@ for w in words.unique():
     idf = np.log(len(sentences) / sentences.str.contains(re_pat).sum())
     tfidf[w] = tf * idf
 ```
+
 
 ## 13. Text and features
 ## 1. Nominal feature encoding: One hot encoding
@@ -460,6 +463,3 @@ pl = Pipeline(steps=[('preprocessor', preproc), ('regressor', LinearRegression()
 Accuracy treats TP the same as TN; not appropriate for class-imbalanced data(class imbalanced data is when the ratio of positive-negative outcomes is far from 1.)
 <br>
 When tackling class unbalanced condition, accuracy is not a good choice. We need the measurement to focus on more rare class.
-
-## QUESTIONS
-

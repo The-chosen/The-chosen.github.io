@@ -5,7 +5,7 @@ subtitle: 'Loss function and optimization'
 author: "YYGX"
 header-style: text
 tags:
-  - cs231n
+  - Stanford-CS231N
 ---
 
 

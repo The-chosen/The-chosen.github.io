@@ -5,7 +5,7 @@ subtitle: 'Introduction to Neural network'
 author: "YYGX"
 header-style: text
 tags:
-  - cs231n
+  - Stanford-CS231N
 ---
 
 
