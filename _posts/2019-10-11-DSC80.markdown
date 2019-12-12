@@ -390,6 +390,16 @@ for w in words.unique():
     tfidf[w] = tf * idf
 ```
 
+## 5. Ngram
+* N-gram language models capture this concept that only nearby words matter; they assume the probability a word occurs only depends on the previous $(N−1)$ words. 
+* That is, an N-gram model says: $P(w_n|w_1,\ldots,w_{n-1}) = P(w_n|w_{n-(N-1)},\ldots,w_{n-1})$.<br>For Example, the trigrams of the sentence $w$ in the example above are:
+`[('when', 'I', 'eat'), ('I', 'eat', 'pizza'), ... , ('wipe', 'off', 'the'), ('off', 'the', 'grease')]`
+$$P(w_1,w_2,w_3) = P(w_3 | w_1, w_2) = \frac{C(w_1, w_2, w_3)}{C(w_1, w_2)}$$
+
+* terms:
+  * corpus: the likelihood that a given sequence of words occur in a given "language"
+  * tokens: Computing the probabilities of a language model from a book requires breaking up the text of book into sequences of tokens. This process is called `tokenization`.
+
 
 ## 13. Text and features
 ## 1. Nominal feature encoding: One hot encoding
@@ -421,12 +431,31 @@ A column containing US states transforms into 50 feature columns
 
 *Note:* Once `fit`, estimators are just transformers (`predict` <-> `transform`)
 
+**Design your own `transformer()`:**
+```
+class MyTrans(BaseEstimator, TransformerMixin):
+    
+    def __init__(self):
+        
+        pass
+
+    def fit(self, X, y=None):
+
+        return self
+
+    def transform(self, X, y=None):
+        
+        return out
+```
+
+
 ### 3. Building models with transformers and estimators
 
 1. Define your transformations; models.
-1. Transform input data to features.
-1. Use (transformed) features to fit model.
-1. Predict outcomes from features using fit model.
+2. Transform input data to features.
+3. Use (transformed) features to fit model.
+4. Predict outcomes from features using fit model.
+
 
 ### 4. Pipeline
 ```
@@ -449,6 +478,43 @@ preproc = ColumnTransformer(transformers=[('num', num_transformer, num_feat), ('
 pl = Pipeline(steps=[('preprocessor', preproc), ('regressor', LinearRegression())])
 ```
 
+## 16. Bias and Variance
+Cross validation can reduce variance.
+- Method 1:
+```
+# scikit-learn k-fold cross-validation
+
+from sklearn.model_selection import KFold
+# data sample
+data = np.array([0.1, 0.2, 0.3, 0.4, 0.5, 0.6])
+
+# prepare cross validation
+kfold = KFold(3, True, 1)
+
+# enumerate splits
+for train, test in kfold.split(data):
+    print('train: %s, test: %s' % (data[train], data[test]))
+
+--- --- ---
+train: [0.1 0.4 0.5 0.6], test: [0.2 0.3]
+train: [0.2 0.3 0.4 0.6], test: [0.1 0.5]
+train: [0.1 0.2 0.3 0.5], test: [0.4 0.6]
+```
+
+- Method 2
+    `scores = cross_val_score(pipeline, X_train, y_train, cv=3)`
+
+- Method 3
+  **`GridSearchCV()`**
+  ```
+    parameters = {
+        'max_depth': [2,3,4,5,7,10,13,15,18,None], 
+        'min_samples_split':[2,3,5,7,10,15,20],
+        'min_samples_leaf':[2,3,5,7,10,15,20]
+    }
+    clf = GridSearchCV(DecisionTreeClassifier(), parameters, cv=5)
+    clf.fit(X_train, y_train)
+  ```
 ## 17. Examples
 ### 1. Regression with Multicollinearity
 * Linear regression with (perfectly) correlated features leads to high variance (unstable) models.
