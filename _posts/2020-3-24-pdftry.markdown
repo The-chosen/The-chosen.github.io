@@ -1,5 +1,9 @@
-<object data="https://github.com/The-chosen/The-chosen.github.io/tree/master/pdfs/try.pdf" type="application/pdf" width="700px" height="700px">
+<!-- <object data="https://github.com/The-chosen/The-chosen.github.io/tree/master/pdfs/try.pdf" type="application/pdf" width="700px" height="700px">
     <embed src="https://github.com/The-chosen/The-chosen.github.io/tree/master/pdfs/try.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/The-chosen/The-chosen.github.io/tree/master/pdfs/try.pdf">Download PDF</a>.</p>
     </embed>
-</object>
+</object> -->
+
+<!-- <center><embed src="https://github.com/The-chosen/The-chosen.github.io/tree/master/pdfs/try.pdf" width="850" height="600"></center> -->
+
+![UCSD课表_page-0001.jpg](https://i.loli.net/2020/03/24/FB947mKV2gxsrYN.jpg)
