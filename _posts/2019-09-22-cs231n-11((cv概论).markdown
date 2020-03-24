@@ -2,7 +2,7 @@
 layout: post
 title: "11. Detection and Segmentation"
 subtitle: 'cv的四个任务的介绍与归类'
-author: "YYGX"
+author: "Yue Y."
 header-style: text
 tags:
   - Stanford-CS231N

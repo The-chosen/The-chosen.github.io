@@ -2,7 +2,7 @@
 layout: post
 title: "3. Loss function and optimization"
 subtitle: 'Loss function and optimization'
-author: "YYGX"
+author: "Yue Y."
 header-style: text
 tags:
   - Stanford-CS231N

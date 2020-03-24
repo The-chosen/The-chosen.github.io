@@ -2,7 +2,7 @@
 layout: post
 title: "6. Training neural networks I"
 subtitle: 'Training neural networks I'
-author: "YYGX"
+author: "Yue Y."
 header-style: text
 tags:
   - Stanford-CS231N

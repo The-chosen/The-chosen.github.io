@@ -2,7 +2,7 @@
 layout: post
 title: "GRE阅读"
 subtitle: 'GRE阅读部分'
-author: "YYGX"
+author: "Yue Y."
 header-style: text
 tags:
   - GRE

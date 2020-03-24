@@ -2,7 +2,7 @@
 layout: post
 title: "5. Convolutional neural networks (CNNs)"
 subtitle: 'Convolutional neural networks (CNNs)'
-author: "YYGX"
+author: "Yue Y."
 header-style: text
 tags:
   - Stanford-CS231N

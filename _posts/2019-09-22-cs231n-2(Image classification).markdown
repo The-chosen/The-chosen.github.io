@@ -2,7 +2,7 @@
 layout: post
 title: "2. Image classification"
 subtitle: 'Image classification'
-author: "YYGX"
+author: "Yue Y."
 header-style: text
 tags:
   - Stanford-CS231N

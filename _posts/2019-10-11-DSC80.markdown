@@ -2,10 +2,10 @@
 layout: post
 title: "DSC80 Note (Simplified Version)"
 subtitle: 'DSC80 note(Summary from jupyter notebooks from course resources)'
-author: "YYGX"
+author: "Yue Y."
 header-style: text
 tags:
-  - UCSD-DSC80
+  - UCSD-Courses
 ---
 
 >This is the summary note of DSC80(Fall 2019) in UCSD. Part of this note is derived from the course jupyter notebook. This is the link of this course's main page: https://sites.google.com/eng.ucsd.edu/dsc-80-fall-2019

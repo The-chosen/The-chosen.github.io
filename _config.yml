@@ -1,10 +1,10 @@
 # Site settings
-title: YYGX
-SEOTitle: YYGX
+title: Yue Y.
+SEOTitle: Yue Y.
 header-img: img/home-bg.jpg
 email: gxyywayne@gmail.com
-description: "One Blog For Anything"
-keyword: "YYGX, computer vision, robotic, literature"
+description: "For everything"
+keyword: "Robotics, Computer Vision, Literature"
 url: "https://"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -28,7 +28,7 @@ highlighter: rouge
 permalink: pretty
 paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: false                          # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 #timezone: CN  
 
