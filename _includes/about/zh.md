@@ -1,12 +1,26 @@
 > 待填坑
 
+
+##### My researches interests
+Any attracting knowledge in learning algorithms and robotics. 
+
+My current research covers the following directions:
+- [x] Multi-task learning related to domain adaptation in medical image
+- [x] UAV deployents based on GNN
+- [x] Reactive navigation algorithms
+
+##### My projects
+- [Hospital Information System (HIS)](https://github.com/The-chosen/Hospital-Information-System-NEU-proj): 有关医疗系统的web开发。
+- [ArtRobot](https://github.com/The-chosen/ArtRobot-NEU): 全国14届智能车大赛(国家一等奖)
+- To be updated ...
+
 <!-- Hey，我是黄玄，病毒种，进化程度不明，多出没于[博客](https://huangxuan.me)、[微博](weibo.com/huxpro)、[知乎](https://www.zhihu.com/people/huxpro/pins/posts)、[Twitter](https://twitter.com/Huxpro/)、[Github](http://github.com/huxpro)、[Medium](https://medium.com/@Huxpro) 等地带，绝招尚在开发中。
 
 职业是软件工程师，[Web 工会](https://medium.com/ben-and-dion/team-web-3315aa447fb2#.359a9c6cl)活跃成员。目前在 [Facebook](https://www.facebook.com/) 做编程语言相关的工作 ，曾被招募为淘宝网 · [阿里旅行](http://alitrip.com)前端工程师、微影时代 · [微票儿](http://www.wepiao.com/?r=movie)前端基础工程团队负责人、[饿了么](https://ele.me/) · 大前端团队 · [PWA 顾问](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)。
 
 一些作品和开源软件项目，👉 戳 [Portfolio](/portfolio)、[Github](http://github.com/huxpro)、[演说.io](https://zhuanlan.zhihu.com/p/21280918)。 -->
 
-##### My Researches
+
 
 <!-- |     | 💔️           | ❤️ ️                                          | ❤️❤️ ️                                          | ❤️❤️❤️ ️                                      |
 | --- | ------------- | --------------------------------------------- | ----------------------------------------------- | --------------------------------------------- |
@@ -17,7 +31,7 @@
 
 > 未完待续: `Fortran` `Smalltalk` `Pascal` `Forth` `Ruby` `CoffeeScript` `Go` `Elm` `Erlang` `Elixir` `F#` `F*` `Q#` `Nim` `Haxe` `Cyclone` `VimScript` `Perl` `Lua` `AppleScript` -->
 
-##### My projects
+
 
 <!-- - [Upgrading to Progressive Web Apps][9] · [JSConf CN 上海 2017](http://2017.jsconf.cn/)
 - Building Progressive Web Apps · [CSDI 广州 2017](http://www.csdisummit.com/)
