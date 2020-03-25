@@ -2,7 +2,7 @@
 layout: post
 title: "GRE微臣填空和阅读笔记"
 subtitle: 'GRE-微臣填空笔记'
-author: "Yue Y."
+author: "Y. Yang"
 header-style: text
 tags:
   - GRE

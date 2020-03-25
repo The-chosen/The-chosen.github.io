@@ -2,7 +2,7 @@
 layout: post
 title: "7. Training neural networks II"
 subtitle: 'Training neural networks II'
-author: "Yue Y."
+author: "Y. Yang"
 header-style: text
 tags:
   - Stanford-CS231N

@@ -2,7 +2,7 @@
 layout: post
 title: "DSC80 Note (Simplified Version)"
 subtitle: 'DSC80 note(Summary from jupyter notebooks from course resources)'
-author: "Yue Y."
+author: "Y. Yang"
 header-style: text
 tags:
   - UCSD-Courses

@@ -1,6 +1,6 @@
 # Site settings
-title: Yue Y.
-SEOTitle: Yue Y.
+title: Y. Yang
+SEOTitle: Y. Yang
 header-img: img/home-bg.jpg
 email: gxyywayne@gmail.com
 description: "For everything"
@@ -14,7 +14,7 @@ future: true
 # SNS settings
 RSS: false
 weibo_username:     NULL
-zhihu_username:     虚无一代
+zhihu_username:     xu-wu-zhi-jing-42
 github_username:    The-chosen
 twitter_username:   NULL
 #facebook_username:  The-chosen

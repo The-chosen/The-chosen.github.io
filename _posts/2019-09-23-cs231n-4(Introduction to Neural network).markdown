@@ -2,7 +2,7 @@
 layout: post
 title: "4. Introduction to Neural network"
 subtitle: 'Introduction to Neural network'
-author: "Yue Y."
+author: "Y. Yang"
 header-style: text
 tags:
   - Stanford-CS231N

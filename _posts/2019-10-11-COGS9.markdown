@@ -2,7 +2,7 @@
 layout: post
 title: "COGS9 Note"
 subtitle: 'COGS9 Course Notes'
-author: "Yue Y."
+author: "Y. Yang"
 header-style: text
 tags:
   - UCSD-Courses
