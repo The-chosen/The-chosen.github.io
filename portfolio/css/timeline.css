@@ -181,6 +181,15 @@ body, html {
 	background-size: 22px;
 }
 
+.i-GX:before {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url("../images/logo-GX.ico") 120% 120% no-repeat;
+	background-size: 22px;
+}
+
 /******* Hux Branch *****/
 
 /* navbar - dark mode */
