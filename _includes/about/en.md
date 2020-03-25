@@ -8,13 +8,15 @@ My current research covers the following directions:
 - [x] UAV deployents based on GNN
 - [x] Reactive navigation algorithms
 
+To be updated ...
 ##### My projects
 - [Hospital Information System (HIS)](https://github.com/The-chosen/Hospital-Information-System-NEU-proj): A web development project related to medical system.
 - [ArtRobot](https://github.com/The-chosen/ArtRobot-NEU): The project for the 14th NXP Cup National University Students Intelligent Car Race (1st Prize)
 - To be updated ...
 
-
-
+##### For more details
+- My [CV](https://github.com/The-chosen/The-chosen.github.io/blob/master/CV_Yue_Yang(keep%20updating).pdf) (Under updating)
+- My [Github](https://github.com/The-chosen) (Under updating)
 
 <!-- Hi, I am _@huxpro_ (Huang, Xuan), a software engineer & a designer. I am currently working on programming langugaes at [Facebook](https://www.facebook.com/). I previously worked as Web Front-End Engineer at [Alibaba Trip](https://www.alitrip.com/); Web Front-End Infrastructure Team Lead at [Wepiao.com](https://www.crunchbase.com/organization/wepiao#/entity); And [Invited Consultant on PWA](<(https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)>) at [Ele.me](https://github.com/elemefe/).
 
