@@ -30,9 +30,12 @@ Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog:
 
 
 ##### Robotics
+|-|-|
+| **Yue Yang**, Jing Liang, and Jia Pan, "*BCBSD: Anytime Bounded Conflicted-Based Algorithm for Dynamic Environments*", in preparation. | <img style="float: center;" width = "100" src="../../img/paper_imgs/icra21.gif"> | 
 
-<img style="float: right;" width = "100" src="../../img/paper_imgs/icra21.gif">
-**Yue Yang**, Jing Liang, and Jia Pan, "*BCBSD: Anytime Bounded Conflicted-Based Algorithm for Dynamic Environments*", in preparation.
+
+
+
 
 #### My projects
 - [Hospital Information System (HIS)](https://github.com/The-chosen/Hospital-Information-System-NEU-proj): A web development project related to medical system.
