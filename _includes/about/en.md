@@ -1,4 +1,4 @@
-> To be done (Under construction)
+> VENI VIDI VICI
 
 #### My researches interests
 I'm interested in any attracting knowledge in robotics and learning algorithms. 
@@ -11,7 +11,6 @@ My current research covers the following directions:
 #### Publications and Preprints
 
 ##### AI applications in healthcare
-
 
 
 |-|-|
@@ -47,8 +46,8 @@ Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog:
 
 
 #### For more details
-- My [CV](https://github.com/The-chosen/The-chosen.github.io/blob/master/CV_Yue_Yang(keep%20updating).pdf) (Under updating)
-- My [Github](https://github.com/The-chosen) (Under updating)
+- My [CV](https://github.com/The-chosen/The-chosen.github.io/blob/master/CV.pdf) 
+- My [Github](https://github.com/The-chosen) 
 
 
 
