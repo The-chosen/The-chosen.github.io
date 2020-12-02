@@ -1,22 +1,54 @@
 > To be done (Under construction)
 
-##### My researches interests
-Any attracting knowledge in learning algorithms and robotics. 
+#### My researches interests
+I'm interested in any attracting knowledge in robotics and learning algorithms. 
 
 My current research covers the following directions:
-- [x] Multi-task learning related to domain adaptation in medical image
-- [x] UAV deployents based on GNN
-- [x] Reactive navigation algorithms
+- Multi-Agent Path Planning
+- Multi-Modality Learning in medical imaging
+- Self-supervised Learning
 
-To be updated ...
-##### My projects
+#### Publications and Preprints
+
+##### AI applications in healthcare
+
+**Yue Yang** and Pengtao Xie, "*Discriminative Cross-Modal Data Augmentation for Medical Imaging Applications*",
+in submission to a top conference. [\[arxiv link\]](https://arxiv.org/abs/2010.03468)  
+
+<img style="float: right;" src="../../img/paper_imgs/iclr21.jpg">
+
+<hr>
+
+Xuehai He $^\*$ , Xingyi Yang$^\*$, **Yue Yang**, Ruofan Guo, Yuxiao Liang, Shanghang Zhang, Li Du, and Pengtao Xie, 
+"*Supervised Pretraining or Self-supervised Pretraining? A Tale of Two Transfer Learning Paradigms*", in submission to a top conference.
+
+<hr>
+
+Guangtao Zeng, Wenmian Yang, Zeqian Ju, **Yue Yang**, Sicheng Wang, Ruisi Zhang, Meng Zhou, Jiaqi Zeng, Xiangyu Dong,
+Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog: A Large-scale Medical Dialogue Dataset*", in EMNLP 2020
+##### Robotics
+**Yue Yang**, Jing Liang, and Jia Pan, "*BCBSD: Anytime Bounded Conflicted-Based Algorithm for Dynamic Environments*", in preparation.
+
+#### My projects
 - [Hospital Information System (HIS)](https://github.com/The-chosen/Hospital-Information-System-NEU-proj): A web development project related to medical system.
 - [ArtRobot](https://github.com/The-chosen/ArtRobot-NEU): The project for the 14th NXP Cup National University Students Intelligent Car Race (1st Prize)
 - To be updated ...
 
-##### For more details
+#### For more details
 - My [CV](https://github.com/The-chosen/The-chosen.github.io/blob/master/CV_Yue_Yang(keep%20updating).pdf) (Under updating)
 - My [Github](https://github.com/The-chosen) (Under updating)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- Hi, I am _@huxpro_ (Huang, Xuan), a software engineer & a designer. I am currently working on programming langugaes at [Facebook](https://www.facebook.com/). I previously worked as Web Front-End Engineer at [Alibaba Trip](https://www.alitrip.com/); Web Front-End Infrastructure Team Lead at [Wepiao.com](https://www.crunchbase.com/organization/wepiao#/entity); And [Invited Consultant on PWA](<(https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)>) at [Ele.me](https://github.com/elemefe/).
