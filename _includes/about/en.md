@@ -1,4 +1,4 @@
-> VENI VIDI VICI
+> VENI VIDI VICI —— GIulio Cesare
 
 #### My researches interests
 I'm interested in any attracting knowledge in robotics and learning algorithms. 
