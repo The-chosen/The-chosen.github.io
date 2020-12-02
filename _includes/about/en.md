@@ -1,7 +1,7 @@
 > VENI VIDI VICI —— GIulio Cesare
 
 #### My researches interests
-I'm interested in any attracting knowledge in robotics and learning algorithms. 
+I'm interested in any **interesting** topics in robotics and learning algorithms. 
 
 My current research covers the following directions:
 - Multi-Agent Path Planning
