@@ -15,7 +15,7 @@ My current research covers the following directions:
 
 
 |-|-|
-| **Yue Yang** and Pengtao Xie, "*Discriminative Cross-Modal Data Augmentation for Medical Imaging Applications*", in submission to a top conference. [\[arxiv link\]](https://arxiv.org/abs/2010.03468)  | <img style="float: center;" width = "200" src="../../img/paper_imgs/iclr21.jpg"> | 
+| **Yue Yang** and Pengtao Xie, "*Discriminative Cross-Modal Data Augmentation for Medical Imaging Applications*", in submission to a top conference. [\[arxiv link\]](https://arxiv.org/abs/2010.03468)  | <img style="float: center;" width = "400" src="../../img/paper_imgs/iclr21.jpg"> | 
 
 
 <hr>
@@ -31,7 +31,7 @@ Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog:
 
 ##### Robotics
 |-|-|
-| **Yue Yang**, Jing Liang, and Jia Pan, "*BCBSD: Anytime Bounded Conflicted-Based Algorithm for Dynamic Environments*", in preparation. | <img style="float: center;" width = "100" src="../../img/paper_imgs/icra21.gif"> | 
+| **Yue Yang**, Jing Liang, and Jia Pan, "*BCBSD: Anytime Bounded Conflicted-Based Algorithm for Dynamic Environments*", in preparation. | <img style="float: center;" width = "400" src="../../img/paper_imgs/icra21.gif"> | 
 
 
 
