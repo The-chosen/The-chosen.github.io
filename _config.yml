@@ -110,3 +110,7 @@ friends: [
         href: "http://404.com/"
     }
 ]
+
+# 是否开启访问量统计功能(不蒜子)
+busuanzi:
+  enable: true
