@@ -1,30 +1,78 @@
-> 待填坑
+> 我來，我见，我征服
+
+#### 研究興趣
+我對於任何**有趣**的研究領域都感興趣 :)
+包括不限於：learning algorithms, robotics, etc. 
+
+我當前的研究涉及以下幾個子方向：
+- Multi-Agent Path Planning
+- Multi-Modality Learning in medical imaging
+- Self-supervised Learning
+
+#### 論文
+
+##### 醫療影像 之 AI
 
 
-##### My researches interests
-Any attracting knowledge in learning algorithms and robotics. 
-
-My current research covers the following directions:
-- [x] Multi-task learning related to domain adaptation in medical image
-- [x] UAV deployents based on GNN
-- [x] Reactive navigation algorithms
-
-To be updated ...
-##### My projects
-- [Hospital Information System (HIS)](https://github.com/The-chosen/Hospital-Information-System-NEU-proj): 有关医疗系统的web开发。
-- [ArtRobot](https://github.com/The-chosen/ArtRobot-NEU): 全国14届智能车大赛(国家一等奖)
-- To be updated ...
-
-##### For more details
-- 我的 [简历](https://github.com/The-chosen/The-chosen.github.io/blob/master/CV_Yue_Yang(keep%20updating).pdf) (Under updating)
-- 我的 [Github](https://github.com/The-chosen) (Under updating)
+|-|-|
+| **Yue Yang** and Pengtao Xie, "*Discriminative Cross-Modal Data Augmentation for Medical Imaging Applications*", in submission to a top conference. [\[arxiv link\]](https://arxiv.org/abs/2010.03468)  | <img style="float: center;" width = "400" src="../../img/paper_imgs/iclr21.jpg"> | 
 
 
-<!-- Hey，我是黄玄，病毒种，进化程度不明，多出没于[博客](https://huangxuan.me)、[微博](weibo.com/huxpro)、[知乎](https://www.zhihu.com/people/huxpro/pins/posts)、[Twitter](https://twitter.com/Huxpro/)、[Github](http://github.com/huxpro)、[Medium](https://medium.com/@Huxpro) 等地带，绝招尚在开发中。
+<hr>
 
-职业是软件工程师，[Web 工会](https://medium.com/ben-and-dion/team-web-3315aa447fb2#.359a9c6cl)活跃成员。目前在 [Facebook](https://www.facebook.com/) 做编程语言相关的工作 ，曾被招募为淘宝网 · [阿里旅行](http://alitrip.com)前端工程师、微影时代 · [微票儿](http://www.wepiao.com/?r=movie)前端基础工程团队负责人、[饿了么](https://ele.me/) · 大前端团队 · [PWA 顾问](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)。
+Xuehai He* , Xingyi Yang* , **Yue Yang**, Ruofan Guo, Yuxiao Liang, Shanghang Zhang, Li Du, and Pengtao Xie, 
+"*Supervised Pretraining or Self-supervised Pretraining? A Tale of Two Transfer Learning Paradigms*", in submission to a top conference.
 
-一些作品和开源软件项目，👉 戳 [Portfolio](/portfolio)、[Github](http://github.com/huxpro)、[演说.io](https://zhuanlan.zhihu.com/p/21280918)。 -->
+<hr>
+
+Guangtao Zeng, Wenmian Yang, Zeqian Ju, **Yue Yang**, Sicheng Wang, Ruisi Zhang, Meng Zhou, Jiaqi Zeng, Xiangyu Dong,
+Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog: A Large-scale Medical Dialogue Dataset*", in EMNLP 2020 [\[paper link\]](https://www.aclweb.org/anthology/2020.emnlp-main.743/)
+
+
+
+##### 機器人
+
+|-|-|
+| **Yue Yang**, Jing Liang, and Jia Pan, "*BCBSD: Anytime Bounded Conflicted-Based Algorithm for Dynamic Environments*", in preparation. | <img style="float: center;" width = "400" src="../../img/paper_imgs/icra21.gif"> | 
+
+
+#### 其他項目
+
+|-|-|
+| [ArtRobot](https://github.com/The-chosen/ArtRobot-NEU): The project for the 14th NXP Cup National University Students Intelligent Car Race (1st Prize) | <img style="float: center;" width = "400" src="../../img/paper_imgs/artrobo.png"> |
+
+<hr>
+
+|-|-|
+| [Hospital Information System (HIS)](https://github.com/The-chosen/Hospital-Information-System-NEU-proj): A web development project related to medical system. |  <img style="float: center;" width = "400" src="../../img/paper_imgs/his.png"> |
+
+
+<hr>
+
+|-|-|
+| [Cross-Border E-Commerce Transaction Platform](https://github.com/The-chosen/e-commercial-platform): an online platform for commercial transactions between MVO, BVO and GVO. |  <img style="float: center;" width = "400" src="../../img/paper_imgs/e-com.png"> |
+
+
+#### 其他~
+- 我的 [簡歷](https://github.com/The-chosen/The-chosen.github.io/blob/master/CV.pdf) 
+- 我的 [Github](https://github.com/The-chosen) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Hi, I am _@huxpro_ (Huang, Xuan), a software engineer & a designer. I am currently working on programming langugaes at [Facebook](https://www.facebook.com/). I previously worked as Web Front-End Engineer at [Alibaba Trip](https://www.alitrip.com/); Web Front-End Infrastructure Team Lead at [Wepiao.com](https://www.crunchbase.com/organization/wepiao#/entity); And [Invited Consultant on PWA](<(https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)>) at [Ele.me](https://github.com/elemefe/).
+
+I studied Digital Media Art and graduated from [Communication University of China](https://en.wikipedia.org/wiki/Communication_University_of_China) by 2016, and am studying Computer Science at [Rochester Institute of Technology](https://en.wikipedia.org/wiki/Rochester_Institute_of_Technology) from 2017. -->
 
 
 
@@ -35,19 +83,18 @@ To be updated ...
 | 😏  | `Shell`       | `Java` `Python`                               | `TypeScript` `Flow` `WASM`                      | `Haskell` `Coq` <br> `SML` `OCaml` `ReasonML` |
 | 🤓  |               | `JavaScript`                                  | `Javascript >ES6`                               | `λ` `Λ` `Π` `Σ`                               |
 
-> 未完待续: `Fortran` `Smalltalk` `Pascal` `Forth` `Ruby` `CoffeeScript` `Go` `Elm` `Erlang` `Elixir` `F#` `F*` `Q#` `Nim` `Haxe` `Cyclone` `VimScript` `Perl` `Lua` `AppleScript` -->
+> To be continue: `Fortran` `Smalltalk` `Pascal` `Forth` `Ruby` `CoffeeScript` `Go` `Elm` `Erlang` `Elixir` `F#` `F*` `Q#` `Nim` `Haxe` `Cyclone` `VimScript` `Perl` `Lua` `AppleScript` -->
 
 
-
-<!-- - [Upgrading to Progressive Web Apps][9] · [JSConf CN 上海 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI 广州 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux 北京 2017
-- 炒冷饭 · PWA 到底是个什么玩意？· Baidu HQ 北京 2017
-- [Service Worker 101][5] · GDG DevFest 北京 2016
-- [Progressive Web App，复兴序章][4] · [QCon 上海 2016](http://2016.qconshanghai.com/presentation/3111)
-- Progressive Web App 之我见 · GDG IO Redux 北京 2016
+<!-- - [Upgrading to Progressive Web Apps][9] · [JSConf China Shanghai 2017](http://2017.jsconf.cn/)
+- Building Progressive Web Apps · [CSDI Guangzhou 2017](http://www.csdisummit.com/)
+- The State of Progressive Web App · GDG IO Redux Beijing 2017
+- PWA Rehashing · Baidu HQ Beijing 2017
+- [Service Worker 101][5] · GDG DevFest Beijing 2016
+- [Progressive Web Apps][4] · QCon Shanghai 2016
+- Progressive Web App in my POV · GDG IO Redux Beijing 2016
 - [CSS Still Sucks 2015][2] · 2015
-- [JavaScript 模块化七日谈][1] · 2015
+- [JavaScript Modularization Journey][1] · 2015
 
 [1]: //huangxuan.me/2015/07/09/js-module-7day/
 [2]: //huangxuan.me/2015/12/28/css-sucks-2015/
