@@ -35,13 +35,16 @@ Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog:
 | **Yue Yang**, Jing Liang, and Jia Pan, "*BCBSD: Anytime Bounded Conflicted-Based Algorithm for Dynamic Environments*", in preparation. | <img style="float: center;" width = "400" src="../../img/paper_imgs/icra21.gif"> | 
 
 
-
-
-
 #### My projects
-- [Hospital Information System (HIS)](https://github.com/The-chosen/Hospital-Information-System-NEU-proj): A web development project related to medical system.
-- [ArtRobot](https://github.com/The-chosen/ArtRobot-NEU): The project for the 14th NXP Cup National University Students Intelligent Car Race (1st Prize)
-- To be updated ...
+
+|-|-|
+| [ArtRobot](https://github.com/The-chosen/ArtRobot-NEU): The project for the 14th NXP Cup National University Students Intelligent Car Race (1st Prize) | <img style="float: center;" width = "400" src="../../img/paper_imgs/artrobo.png"> |
+
+<hr>
+
+|-|-|
+| [Hospital Information System (HIS)](https://github.com/The-chosen/Hospital-Information-System-NEU-proj): A web development project related to medical system. |  <img style="float: center;" width = "400" src="../../img/paper_imgs/his.png"> |
+
 
 #### For more details
 - My [CV](https://github.com/The-chosen/The-chosen.github.io/blob/master/CV_Yue_Yang(keep%20updating).pdf) (Under updating)
