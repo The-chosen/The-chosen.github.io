@@ -20,7 +20,7 @@ My current research covers the following directions:
 
 <hr>
 
-Xuehai He * , Xingyi Yang *, **Yue Yang**, Ruofan Guo, Yuxiao Liang, Shanghang Zhang, Li Du, and Pengtao Xie, 
+Xuehai He* , Xingyi Yang* , **Yue Yang**, Ruofan Guo, Yuxiao Liang, Shanghang Zhang, Li Du, and Pengtao Xie, 
 "*Supervised Pretraining or Self-supervised Pretraining? A Tale of Two Transfer Learning Paradigms*", in submission to a top conference.
 
 <hr>
