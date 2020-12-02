@@ -20,7 +20,7 @@ My current research covers the following directions:
 
 <hr>
 
-Xuehai He* , Xingyi Yang*, **Yue Yang**, Ruofan Guo, Yuxiao Liang, Shanghang Zhang, Li Du, and Pengtao Xie, 
+Xuehai He * , Xingyi Yang *, **Yue Yang**, Ruofan Guo, Yuxiao Liang, Shanghang Zhang, Li Du, and Pengtao Xie, 
 "*Supervised Pretraining or Self-supervised Pretraining? A Tale of Two Transfer Learning Paradigms*", in submission to a top conference.
 
 <hr>
@@ -30,6 +30,7 @@ Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog:
 
 
 ##### Robotics
+
 |-|-|
 | **Yue Yang**, Jing Liang, and Jia Pan, "*BCBSD: Anytime Bounded Conflicted-Based Algorithm for Dynamic Environments*", in preparation. | <img style="float: center;" width = "400" src="../../img/paper_imgs/icra21.gif"> | 
 
