@@ -26,7 +26,7 @@ Xuehai He* , Xingyi Yang* , **Yue Yang**, Ruofan Guo, Yuxiao Liang, Shanghang Zh
 <hr>
 
 Guangtao Zeng, Wenmian Yang, Zeqian Ju, **Yue Yang**, Sicheng Wang, Ruisi Zhang, Meng Zhou, Jiaqi Zeng, Xiangyu Dong,
-Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog: A Large-scale Medical Dialogue Dataset*", in EMNLP 2020
+Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog: A Large-scale Medical Dialogue Dataset*", in EMNLP 2020 [\[paper link\]](https://www.aclweb.org/anthology/2020.emnlp-main.743/)
 
 
 ##### Robotics
