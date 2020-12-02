@@ -16,25 +16,17 @@
                         src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
                     </iframe>
                 </p>
+
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
             </div>
         </div>
     </div>
-
-    <% if (theme.busuanzi && theme.busuanzi.enable){ %>
-    <!-- 不蒜子统计 -->
-    <span id="busuanzi_container_site_pv">
-                本站总访问量<span id="busuanzi_value_site_pv"></span>次
-        </span>
-    <span class="post-meta-divider">|</span>
-    <span id="busuanzi_container_site_uv" style='display:none'>
-                本站访客数<span id="busuanzi_value_site_uv"></span>人
-        </span>
-    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <% } %>
 </footer>
 
 <!-- jQuery -->
 <script src="{{ "/js/jquery.min.js " | prepend: site.baseurl }}"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
