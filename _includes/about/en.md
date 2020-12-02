@@ -14,8 +14,8 @@ My current research covers the following directions:
 
 <img style="float: right;" width = "100" src="../../img/paper_imgs/iclr21.jpg">
 
-**Yue Yang** and Pengtao Xie, "*Discriminative Cross-Modal Data Augmentation for Medical Imaging Applications*",
-in submission to a top conference. [\[arxiv link\]](https://arxiv.org/abs/2010.03468)  
+|-|-|
+| **Yue Yang** and Pengtao Xie, "*Discriminative Cross-Modal Data Augmentation for Medical Imaging Applications*", in submission to a top conference. [\[arxiv link\]](https://arxiv.org/abs/2010.03468)  | ![]("../../img/paper_imgs/iclr21.jpg") | 
 
 
 
