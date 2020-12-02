@@ -28,6 +28,7 @@ Guangtao Zeng, Wenmian Yang, Zeqian Ju, **Yue Yang**, Sicheng Wang, Ruisi Zhang,
 Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog: A Large-scale Medical Dialogue Dataset*", in EMNLP 2020 [\[paper link\]](https://www.aclweb.org/anthology/2020.emnlp-main.743/)
 
 
+
 ##### Robotics
 
 |-|-|
@@ -43,6 +44,12 @@ Ruoyu Zhang, Hongchao Fang, Penghui Zhu, Shu Chen, and Pengtao Xie, "*MedDialog:
 
 |-|-|
 | [Hospital Information System (HIS)](https://github.com/The-chosen/Hospital-Information-System-NEU-proj): A web development project related to medical system. |  <img style="float: center;" width = "400" src="../../img/paper_imgs/his.png"> |
+
+
+<hr>
+
+|-|-|
+| [Cross-Border E-Commerce Transaction Platform](https://github.com/The-chosen/e-commercial-platform): an online platform for commercial transactions between MVO, BVO and GVO. |  <img style="float: center;" width = "400" src="../../img/paper_imgs/e-com.png"> |
 
 
 #### For more details
