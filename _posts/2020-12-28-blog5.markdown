@@ -5,6 +5,6 @@ subtitle: '年末总结 暨 申请季总结'
 author: "Y. Yang"
 header-style: text
 tags:
-  - blogs
+  - Blogs
 ---
 
