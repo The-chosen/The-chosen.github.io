@@ -50,7 +50,7 @@ Edit version 1, 12-28-2020-21:56
 本人亲历了21Fall的全球申请，深感疫情年的魔幻，现记录之，以供后人之飨。
 
 ## 1. 个人背景
-- GPA: 89.5/100 (末流985) + 4.0/4.0 (UC某校一学期交换成绩) | T:105(S23) | G:327(157 + 170) + 4.0
+- GPA: 89.5/100 (末流985) + 4.0/4.0 (UC某校一学期交换成绩) \| T:105(S23) \| G:327(157 + 170) + 4.0
 - 三段科研，一段本校，一段UC某校，一段港三。申请的时候一篇1作顶会在投 + 一篇3作顶会在投 + 一篇4作顶会accept + 一篇1作顶会在写(...)
 - 一段startup的实习
 - 推荐信就是科研老师、企业mentor、学校老师写的。科研老师给的是不是强推未知。
@@ -76,7 +76,7 @@ Edit version 1, 12-28-2020-21:56
 
 ### 申请结果
 结果如下：
-- AD(10个): GaTech@MSCS, NWU@MSCS, NYU@MSCS(Courant), USC@MSCS, UMass@MSCS | TUM@Info | TUD@MSCS | NUS@MComp(CS General) | ANU@MSCS | Bristol@MS-Robotics.
+- AD(10个): GaTech@MSCS, NWU@MSCS, NYU@MSCS(Courant), USC@MSCS, UMass@MSCS \| TUM@Info \| TUD@MSCS \| NUS@MComp(CS General) \| ANU@MSCS \| Bristol@MS-Robotics.
 - WL(2个): Dartmouth@MSCS, NYU@MSCS(Tandon).
 - Pending(1个): NUS@MEng(估么着会被Rej)
 - Rej(27个):剩下的那些项目
